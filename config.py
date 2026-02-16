@@ -27,7 +27,7 @@ VIBES = [
 
 OCCASIONS = [
     "work", "weekend", "date", "event", "travel", "party", "dinner",
-    "vacation", "city",
+    "vacation", "city", "night out",
 ]
 
 COLORS = [
@@ -36,6 +36,13 @@ COLORS = [
 ]
 
 SEASONS = ["winter", "spring", "summer", "fall", "all"]
+
+GARMENT_CATEGORIES = [
+    "dress", "top", "bottom", "outerwear", "jumpsuit", "skirt", "knitwear",
+]
+GARMENT_CATEGORIES_SET = set(GARMENT_CATEGORIES)
+
+GENDERS = ["women", "men", "unisex"]
 
 # Sets for fast lookup (used by validation and scoring)
 SILHOUETTES_SET = set(SILHOUETTES)
@@ -55,6 +62,35 @@ TAG_SCHEMA = {
     "occasion": OCCASIONS,
     "colors": COLORS,
     "season": SEASONS,
+    "category": GARMENT_CATEGORIES,
+}
+
+# ── Category-occasion affinity ──────────────────────────────────────
+# How appropriate each garment category is for each occasion (0-1).
+# Used as a multiplier in context scoring to penalize mismatches like
+# "outerwear for a night out".
+CATEGORY_OCCASION_AFFINITY = {
+    "dress":     {"party": 1.0, "night out": 1.0, "date": 1.0, "dinner": 0.95,
+                  "event": 1.0, "work": 0.70, "weekend": 0.75, "city": 0.80,
+                  "travel": 0.50, "vacation": 0.85, "casual": 0.60},
+    "top":       {"party": 0.85, "night out": 0.85, "date": 0.80, "dinner": 0.80,
+                  "event": 0.75, "work": 0.90, "weekend": 0.90, "city": 0.85,
+                  "travel": 0.85, "vacation": 0.85, "casual": 0.95},
+    "bottom":    {"party": 0.70, "night out": 0.70, "date": 0.75, "dinner": 0.80,
+                  "event": 0.65, "work": 0.95, "weekend": 0.90, "city": 0.85,
+                  "travel": 0.90, "vacation": 0.80, "casual": 0.95},
+    "outerwear": {"party": 0.30, "night out": 0.25, "date": 0.45, "dinner": 0.40,
+                  "event": 0.40, "work": 0.80, "weekend": 0.85, "city": 0.90,
+                  "travel": 0.95, "vacation": 0.50, "casual": 0.80},
+    "jumpsuit":  {"party": 0.90, "night out": 0.85, "date": 0.85, "dinner": 0.85,
+                  "event": 0.90, "work": 0.70, "weekend": 0.75, "city": 0.80,
+                  "travel": 0.65, "vacation": 0.80, "casual": 0.60},
+    "skirt":     {"party": 0.80, "night out": 0.80, "date": 0.85, "dinner": 0.85,
+                  "event": 0.80, "work": 0.90, "weekend": 0.70, "city": 0.80,
+                  "travel": 0.55, "vacation": 0.70, "casual": 0.60},
+    "knitwear":  {"party": 0.30, "night out": 0.25, "date": 0.55, "dinner": 0.55,
+                  "event": 0.35, "work": 0.80, "weekend": 0.95, "city": 0.80,
+                  "travel": 0.80, "vacation": 0.50, "casual": 0.95},
 }
 
 # ── Body analysis enums ────────────────────────────────────────────────

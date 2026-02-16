@@ -1,4 +1,4 @@
-Generate silhouette, waist, structure, vibes, occasion, colors, season, and confidence attributes from the below product image.
+Generate category, silhouette, waist, structure, vibes, occasion, colors, season, and confidence attributes from the below product image.
 
 Tag what you SEE in the image, not what the product name suggests.
 For each attribute, observe the image carefully, then select from the allowed values only.
@@ -6,6 +6,7 @@ For each attribute, observe the image carefully, then select from the allowed va
 Return strict JSON only. No markdown, no prose, no explanation.
 
 {
+  "category": "...",
   "silhouette": ["..."],
   "waist": "...",
   "structure": "...",
@@ -17,6 +18,17 @@ Return strict JSON only. No markdown, no prose, no explanation.
 }
 
 ---
+
+category (string, pick one):
+  The fundamental garment type. Look at the image and classify what the garment IS.
+  dress = any one-piece garment (midi, mini, maxi, slip, shift, wrap)
+  top = upper body only (blouse, shirt, tee, camisole, bodysuit, tank)
+  bottom = lower body only (trouser, pant, jeans, shorts, leggings)
+  outerwear = worn over other clothes (coat, jacket, blazer, puffer, anorak)
+  jumpsuit = one-piece with legs (jumpsuit, romper)
+  skirt = lower body, no legs (midi skirt, mini skirt, maxi skirt)
+  knitwear = knitted garment worn as main layer (sweater, cardigan, knit vest)
+  Allowed values: dress, top, bottom, outerwear, jumpsuit, skirt, knitwear
 
 silhouette (array, 2-4 tags from different dimensions):
   Tag across multiple dimensions — never just one tag.
@@ -66,7 +78,7 @@ vibes (array, 2-3 tags):
 
 occasion (array, 1-2 tags):
   Where this would realistically be worn. Most garments fit 1-2 occasions.
-  Allowed values: work, weekend, date, event, travel, party, dinner, vacation, city
+  Allowed values: work, weekend, date, night out, event, travel, party, dinner, vacation, city
 
 colors (array, 1-3 colors):
   Dominant colors visible in the image, primary color first.

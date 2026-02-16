@@ -49,7 +49,12 @@ for key, default in {
 base_dir = Path(__file__).resolve().parent
 
 
-def _refresh_live_catalog(project_root: Path, max_per_brand: int, vibes: list[str] | None = None) -> tuple[bool, str]:
+def _refresh_live_catalog(
+    project_root: Path,
+    max_per_brand: int,
+    vibes: list[str] | None = None,
+    gender: str = "Women",
+) -> tuple[bool, str]:
     if not os.getenv("SERPAPI_KEY"):
         return False, "SERPAPI_KEY is not set."
     if not os.getenv("ANTHROPIC_API_KEY"):
@@ -62,6 +67,8 @@ def _refresh_live_catalog(project_root: Path, max_per_brand: int, vibes: list[st
         str(max_per_brand),
         "--out",
         "data/products_live.json",
+        "--gender",
+        gender.lower(),
     ]
     if vibes:
         cmd += ["--vibes"] + vibes
@@ -136,6 +143,12 @@ if st.session_state._photo_status in {"analyzed", "fallback"} and st.session_sta
 
 section_header("2) Your Style Preferences", "Pick your vibe, occasion, weather, and core colors.")
 
+gender_options = ["Women", "Men", "Unisex"]
+default_gender = st.session_state.manual_profile.get("gender", "Women")
+if default_gender not in gender_options:
+    default_gender = "Women"
+gender = st.selectbox("Shopping for", gender_options, index=gender_options.index(default_gender))
+
 vibe_options = [
     "minimal",
     "polished",
@@ -164,7 +177,7 @@ vibes = st.multiselect(
     placeholder="Choose your style vibes...",
 )
 
-occasion_options = ["work", "weekend", "date", "event", "travel", "party", "dinner", "vacation", "city"]
+occasion_options = ["work", "weekend", "date", "night out", "event", "travel", "party", "dinner", "vacation", "city"]
 occasion_multi = st.multiselect(
     "What do you dress for? (select multiple)",
     occasion_options,
@@ -185,6 +198,14 @@ with col_b:
     if default_loc not in location_options:
         default_loc = "Urban City"
     location = st.selectbox("Where do you live?", location_options, index=location_options.index(default_loc))
+
+category_options = ["dress", "top", "bottom", "outerwear", "jumpsuit", "skirt", "knitwear"]
+categories = st.multiselect(
+    "What are you looking for? (optional — leave blank for all)",
+    category_options,
+    default=st.session_state.manual_profile.get("categories") or None,
+    placeholder="e.g. dress, top, pants...",
+)
 
 colors = st.multiselect(
     "Core colors",
@@ -220,9 +241,11 @@ if st.button("Save Preferences", type="primary", use_container_width=True):
     primary_occasion = occasion_multi[0] if occasion_multi else "weekend"
 
     st.session_state.manual_profile = {
+        "gender": gender,
         "vibes": vibes or ["minimal"],
         "silhouettes": st.session_state.manual_profile.get("silhouettes", ["relaxed"]),
         "colors": colors,
+        "categories": categories,
         "location": location,
         "season": weather_to_season.get(weather, "all"),
         "weather": weather,
@@ -236,14 +259,15 @@ if st.button("Save Preferences", type="primary", use_container_width=True):
 
 with st.expander("Refresh Catalog", expanded=False):
     user_vibes = st.session_state.manual_profile.get("vibes", [])
+    user_gender = st.session_state.manual_profile.get("gender", "Women")
     if user_vibes:
-        st.caption(f"Will search for products matching your vibes: **{', '.join(user_vibes)}**. Save preferences first to update vibes.")
+        st.caption(f"Will search for **{user_gender.lower()}** products matching your vibes: **{', '.join(user_vibes)}**. Save preferences first to update.")
     else:
         st.caption("Save your preferences first so we can tailor the catalog to your vibes.")
     max_per_brand = st.slider("Max products per brand", min_value=3, max_value=20, value=6, step=1)
     if st.button("Refresh Catalog", type="primary", use_container_width=True):
         with st.spinner("Building your personalized catalog — this may take a minute..."):
-            ok, msg = _refresh_live_catalog(base_dir, max_per_brand, vibes=user_vibes or None)
+            ok, msg = _refresh_live_catalog(base_dir, max_per_brand, vibes=user_vibes or None, gender=user_gender)
         if ok:
             st.success("Catalog refreshed with products matching your style.")
             with st.expander("Build log", expanded=False):
@@ -282,6 +306,12 @@ if st.button("Get Recommendations", type="primary", use_container_width=True):
     body = st.session_state.get("body_profile") or default_body_profile()
     instagram = st.session_state.get("instagram_profile") or {}
     manual = st.session_state.get("manual_profile") or {}
+
+    # Filter by garment category if user selected any
+    selected_cats = manual.get("categories", [])
+    if selected_cats:
+        selected_cats_lower = {c.lower() for c in selected_cats}
+        products = [p for p in products if p.get("category", "").lower() in selected_cats_lower]
 
     user_profile = build_user_profile(body=body, instagram=instagram, manual=manual)
     results = rank_products(products, user_profile, top_k=5, algorithm=algorithm_choice)
