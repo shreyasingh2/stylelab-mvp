@@ -1,0 +1,82 @@
+Generate silhouette, waist, structure, vibes, occasion, colors, season, and confidence attributes from the below product image.
+
+Tag what you SEE in the image, not what the product name suggests.
+For each attribute, observe the image carefully, then select from the allowed values only.
+
+Return strict JSON only. No markdown, no prose, no explanation.
+
+{
+  "silhouette": ["..."],
+  "waist": "...",
+  "structure": "...",
+  "vibes": ["..."],
+  "occasion": ["..."],
+  "colors": ["..."],
+  "season": ["..."],
+  "confidence": 0.0
+}
+
+---
+
+silhouette (array, 2-4 tags from different dimensions):
+  Tag across multiple dimensions — never just one tag.
+  Leg/hem width (pick one): wide-leg | straight | fitted
+  Body fit (pick one): tailored | relaxed | boxy | fluid | draped | fitted
+  Length (pick one): cropped | mini | midi | maxi | longline
+  Shape (pick if visible): a-line | column | defined waist
+  Do NOT pick contradictory tags from the same dimension.
+  Allowed values: wide-leg, tailored, fitted, relaxed, midi, cropped, longline, defined waist, fluid, mini, maxi, straight, a-line, column, boxy, draped
+
+waist (string, pick one):
+  Look at where the waistband sits on the body in the image.
+  high-rise = at or above navel, mid-rise = between hipbone and navel, low-rise = at or below hipbone, defined = intentional waist emphasis but rise unclear, n/a = no waistline.
+  Do not default to n/a — most garments have a visible waistline.
+  Allowed values: high-rise, mid-rise, low-rise, defined, n/a
+
+structure (string, pick one):
+  Judge how the fabric behaves in the image, not the garment type.
+  structured = holds shape, crisp edges, angular folds. soft = drapes and flows, organic folds.
+  A blazer can be soft. A dress can be structured. Look at the fabric.
+  Allowed values: structured, soft
+
+vibes (array, 2-3 tags):
+  The aesthetic mood of the garment. Pick 2-3 tags that best describe the overall feel.
+
+  Use these distinctions to avoid overlap:
+  - minimal = clean lines, no embellishment, neutral palette, understated
+  - polished = put-together, refined, intentional — can overlap with minimal or classic
+  - classic = timeless, traditional silhouettes (trench, blazer, straight-leg) — NOT trendy
+  - elevated basics = high-quality essentials (cashmere, silk tees, quality denim) — focus on fabric quality over design
+  - modern = contemporary, architectural, asymmetric, fashion-forward — NOT traditional
+  - feminine = soft details, florals, lace, bows, delicate — NOT just "for women"
+  - romantic = dreamy, ethereal, ruffles, flowing — more whimsical than feminine
+  - casual = relaxed, everyday, effortless — denim, cotton, easy fits
+  - cozy = warmth-focused, chunky knits, fleece, soft textures — comfort is the point
+  - street = urban, oversized, graphic, sneaker-culture influenced
+  - edgy = leather, dark palette, deconstructed, rebellious — texture contrast matters
+  - bold = high-impact, color or print statement, head-turning
+  - dramatic = theatrical, volume, architectural — more extreme than bold
+  - workwear = office-appropriate, structured, professional
+  - night out = going-out pieces, body-conscious, statement — bars, clubs, parties
+  - evening = formal events, cocktail, embellished — more dressed up than night out
+  - athleisure = sport-inspired worn casually — leggings, joggers, technical fabrics
+  - preppy = collegiate, traditional patterns (plaid, stripes), polo/rugby influence
+
+  Allowed values: minimal, polished, feminine, street, bold, classic, casual, cozy, dramatic, night out, evening, workwear, elevated basics, modern, athleisure, romantic, preppy, edgy
+
+occasion (array, 1-2 tags):
+  Where this would realistically be worn. Most garments fit 1-2 occasions.
+  Allowed values: work, weekend, date, event, travel, party, dinner, vacation, city
+
+colors (array, 1-3 colors):
+  Dominant colors visible in the image, primary color first.
+  Map shades: charcoal=grey, ivory=cream, tan/khaki=camel, wine=burgundy, forest/sage=olive, indigo/cobalt=blue.
+  Allowed values: black, white, cream, navy, olive, camel, grey, burgundy, red, blue, brown, beige
+
+season (array, 1-2 tags):
+  Based on fabric weight and coverage visible in the image.
+  Heavy fabrics = winter/fall. Light fabrics = spring/summer. Versatile = all.
+  Allowed values: winter, spring, summer, fall, all
+
+confidence (float, 0.0-1.0):
+  0.85+ clear photo, 0.65-0.84 some judgment calls, below 0.65 uncertain.

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "raw_001",
+    "brand": "Aritzia",
+    "name": "Effortless Wide-Leg Trouser",
+    "image_urls": [
+      "https://images.aritzia.com/image/upload/q_auto:eco,c_fill,w_1000/f_auto/s24_99_a06_112120_1274_on_b"
+    ],
+    "price_usd": 148,
+    "product_url": "https://www.aritzia.com/us/en/product/effortless-pant"
+  },
+  {
+    "id": "raw_002",
+    "brand": "Reformation",
+    "name": "Silk Midi Dress",
+    "image_urls": [
+      "https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_auto,w_800/PRD-SFCCL-001"
+    ],
+    "price_usd": 278,
+    "product_url": "https://www.thereformation.com/products/silk-midi-dress"
+  }
+]

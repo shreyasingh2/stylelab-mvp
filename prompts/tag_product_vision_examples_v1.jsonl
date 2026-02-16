@@ -1,0 +1,2 @@
+{"input":{"brand":"Aritzia","name":"Tailored Vest"},"output":{"silhouette":["tailored","cropped"],"waist":"defined","structure":"structured","vibes":["polished","modern"],"occasion":["work","event"],"colors":["black"],"season":["spring","fall"],"confidence":0.86}}
+{"input":{"brand":"Reformation","name":"Silk Midi Dress"},"output":{"silhouette":["midi","fluid"],"waist":"defined","structure":"soft","vibes":["feminine","evening"],"occasion":["date","event"],"colors":["olive"],"season":["all"],"confidence":0.82}}

@@ -1,0 +1,9 @@
+streamlit>=1.29.0
+mediapipe==0.10.9
+opencv-python==4.8.1.78
+anthropic==0.18.1
+requests==2.31.0
+beautifulsoup4>=4.12.0
+python-dotenv>=1.0.0
+numpy<2
+httpx<0.28
