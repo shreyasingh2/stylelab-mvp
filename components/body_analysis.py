@@ -193,13 +193,16 @@ def analyze_body_from_image(image_bytes: bytes, width: int, height: int) -> Dict
 
     img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
 
-    with mp.solutions.pose.Pose(
-        static_image_mode=True,
-        model_complexity=2,
-        enable_segmentation=False,
-        min_detection_confidence=0.5,
-    ) as pose:
-        result = pose.process(img_rgb)
+    try:
+        with mp.solutions.pose.Pose(
+            static_image_mode=True,
+            model_complexity=2,
+            enable_segmentation=False,
+            min_detection_confidence=0.5,
+        ) as pose:
+            result = pose.process(img_rgb)
+    except Exception:
+        return default_body_profile(confidence=0.15)
 
     if not result.pose_landmarks:
         return default_body_profile(confidence=0.2)
