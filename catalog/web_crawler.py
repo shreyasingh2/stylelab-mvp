@@ -147,7 +147,7 @@ def scrape_product_page(url: str) -> Dict[str, str]:
     result = {"og_image": "", "description": "", "material": "", "fit_notes": ""}
 
     try:
-        resp = requests.get(url, timeout=20, headers={
+        resp = requests.get(url, timeout=10, headers={
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                           "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         })

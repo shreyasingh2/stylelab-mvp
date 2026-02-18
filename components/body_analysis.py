@@ -2,9 +2,17 @@ from __future__ import annotations
 
 from typing import Any, Dict
 
-import cv2
-import mediapipe as mp
 import numpy as np
+
+# MediaPipe + OpenCV are optional — they fail to install on some cloud
+# environments (e.g. Streamlit Cloud).  When missing, every call to
+# analyze_body_from_image() returns the default fallback profile.
+try:
+    import cv2
+    import mediapipe as mp
+    _HAS_MEDIAPIPE = True
+except ImportError:
+    _HAS_MEDIAPIPE = False
 
 # MediaPipe Pose indices
 NOSE = 0
@@ -183,6 +191,9 @@ def _estimate_confidence(landmarks: Any, feature_confidence: Dict[str, bool]) ->
 
 
 def analyze_body_from_image(image_bytes: bytes, width: int, height: int) -> Dict[str, Any]:
+    if not _HAS_MEDIAPIPE:
+        return default_body_profile(confidence=0.15)
+
     if width <= 0 or height <= 0:
         return default_body_profile(confidence=0.25)
 
