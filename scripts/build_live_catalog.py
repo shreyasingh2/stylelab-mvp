@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 import argparse
-import concurrent.futures
 import json
 import sys
+import time
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -11,7 +11,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from dotenv import load_dotenv
-load_dotenv(PROJECT_ROOT / ".env")
+load_dotenv(PROJECT_ROOT / ".env", override=True)
 
 from catalog.claude_vision import tag_product_with_claude
 from catalog.web_crawler import (
@@ -21,7 +21,7 @@ from catalog.web_crawler import (
     serpapi_shopping_discover,
 )
 
-BRANDS = ["Aritzia", "Princess Polly", "Motel Rocks", "Reformation", "Everlane"]
+BRANDS = ["Reformation", "Aritzia", "Motel Rocks", "Princess Polly"]
 
 # ── Vibe-driven keyword mapping ──────────────────────────────────────
 # Each vibe maps to search keywords that reflect the aesthetic.
@@ -228,7 +228,9 @@ def _build_row_for_candidate(c, use_vision: bool) -> dict | None:
     product_text = ""
     image_url = c.image_url  # Shopping API thumbnail as default
 
-    if c.url:
+    # Only scrape direct retailer URLs — skip Google redirects (they 429)
+    is_direct_url = c.url and "google.com" not in c.url
+    if is_direct_url:
         try:
             page_data = scrape_product_page(c.url)
             # Prefer og:image over Shopping thumbnail (higher resolution)
@@ -248,7 +250,7 @@ def _build_row_for_candidate(c, use_vision: bool) -> dict | None:
             print(f"  page scrape failed for {c.name}: {exc}")
 
     # Fallback: try legacy og:image fetch if we still have no good image
-    if not image_url and c.url:
+    if not image_url and is_direct_url:
         image_url = fetch_og_image(c.url)
 
     if not image_url:
@@ -303,6 +305,50 @@ def _build_row_for_candidate(c, use_vision: bool) -> dict | None:
     return row
 
 
+def _pre_balance_candidates(
+    candidates: list,
+    max_per_category: int = 3,
+    max_total: int = 8,
+) -> list:
+    """Pick a diverse subset of candidates using free name-based category
+    inference BEFORE expensive scraping + Vision tagging.
+
+    Same round-robin logic as _balance_by_category but operates on
+    CrawlCandidate objects instead of tagged rows.
+    """
+    from collections import defaultdict
+
+    buckets: dict[str, list] = defaultdict(list)
+    for c in candidates:
+        cat = _infer_category(c.name) or "other"
+        buckets[cat].append(c)
+
+    selected: list = []
+    cat_counts: dict[str, int] = defaultdict(int)
+
+    priority_order = ["dress", "top", "bottom", "skirt", "jumpsuit", "knitwear", "outerwear", "other"]
+    ordered_cats = [c for c in priority_order if c in buckets]
+    ordered_cats += [c for c in buckets if c not in ordered_cats]
+
+    round_idx = 0
+    while len(selected) < max_total:
+        added_any = False
+        for cat in ordered_cats:
+            if cat_counts[cat] >= max_per_category:
+                continue
+            if round_idx < len(buckets[cat]):
+                selected.append(buckets[cat][round_idx])
+                cat_counts[cat] += 1
+                added_any = True
+                if len(selected) >= max_total:
+                    break
+        round_idx += 1
+        if not added_any:
+            break
+
+    return selected
+
+
 def _balance_by_category(
     rows: list[dict],
     max_per_category: int = 3,
@@ -352,11 +398,10 @@ def _balance_by_category(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build StyleLab live product catalog")
-    parser.add_argument("--max-per-brand", type=int, default=8)
+    parser.add_argument("--max-per-brand", type=int, default=10)
     parser.add_argument("--max-per-category", type=int, default=3,
                         help="Max products per garment category per brand (for diversity)")
     parser.add_argument("--out", default="data/products_live.json")
-    parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--skip-vision", action="store_true",
                         help="Skip Claude Vision tagging, use keyword fallback only")
     parser.add_argument("--vibes", nargs="*", default=None,
@@ -443,24 +488,30 @@ def main() -> None:
             except Exception as exc:
                 print(f"  Diversity search failed: {exc}")
 
-        # ── Phase 3: Tag and build rows ──────────────────────────────
-        brand_rows = []
-        with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, args.workers)) as ex:
-            futures = [
-                ex.submit(_build_row_for_candidate, c, not args.skip_vision)
-                for c in candidates
-            ]
-            for fut in concurrent.futures.as_completed(futures):
-                row = fut.result()
-                if row:
-                    brand_rows.append(row)
-
-        # ── Phase 4: Balance by category ─────────────────────────────
-        balanced = _balance_by_category(
-            brand_rows,
+        # ── Phase 3: Pre-balance by category BEFORE tagging ────────────
+        # Use free name-based category inference to pick a diverse subset
+        # first, so we only scrape + Vision-tag what we'll actually keep.
+        # This cuts ~70% of API calls and page scrapes.
+        pre_balanced = _pre_balance_candidates(
+            candidates,
             max_per_category=args.max_per_category,
             max_total=args.max_per_brand,
         )
+        print(f"  Pre-balanced: {len(candidates)} candidates → {len(pre_balanced)} to tag")
+
+        # ── Phase 4: Tag only the selected candidates ─────────────────
+        brand_rows = []
+        use_vision = not args.skip_vision
+        for ci, c in enumerate(pre_balanced):
+            row = _build_row_for_candidate(c, use_vision)
+            if row:
+                brand_rows.append(row)
+            # Pause between Vision API calls to stay within rate limits
+            # (~30k input tokens/min → each image call is ~5-8k tokens)
+            if use_vision and ci < len(pre_balanced) - 1:
+                time.sleep(4)
+
+        balanced = brand_rows  # already balanced by pre-selection
 
         # Log category distribution
         bal_cats = Counter(r.get("category", "other") for r in balanced)

@@ -105,7 +105,7 @@ def user_context():
 
 @pytest.fixture
 def user_values():
-    return {"comfort_first": False, "boldness": 0.35, "sustainable": True}
+    return {"boldness": 0.35}
 
 
 @pytest.fixture
@@ -272,11 +272,6 @@ class TestContextScoring:
 # ══════════════════════════════════════════════════════════════════════
 
 class TestValuesScoring:
-    def test_sustainable_match(self, user_values):
-        product = {"brand": "Reformation", "vibes": ["minimal"]}
-        score = score_values(product, user_values)
-        assert 0.0 <= score <= 1.0
-
     def test_output_range(self, user_values):
         product = {"vibes": ["bold", "dramatic"], "structure": "structured"}
         score = score_values(product, user_values)

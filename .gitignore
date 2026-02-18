@@ -1,9 +1,26 @@
+# Virtual environments
 .venv/
 .venv_local/
+
+# Python cache
 __pycache__/
 .pycache/
 .pytest_cache/
 *.pyc
+
+# IDE / OS
 .DS_Store
-.env
 .idea/
+.vscode/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Note: data/products_live.json is committed as a default catalog
+# so the app works immediately on first load without API keys.
+
+# Legacy / scratch files
+Body_Porportions_V1.ipynb
+*.xlsx
+docs/

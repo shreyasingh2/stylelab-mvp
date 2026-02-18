@@ -3,7 +3,7 @@
 Context scoring uses a season-neighbor graph (from config.py) and an occasion
 affinity matrix to measure how well a product fits the user's lifestyle context.
 
-Values scoring checks comfort, boldness, and sustainability preferences.
+Values scoring checks boldness preferences.
 """
 from __future__ import annotations
 
@@ -92,17 +92,6 @@ def score_values(product: Dict, values: Dict) -> float:
     vibes = {v.lower() for v in product.get("vibes", [])}
     structure = str(product.get("structure", "")).lower()
 
-    # ── Comfort ──
-    comfort_first = values.get("comfort_first", False)
-    if comfort_first and (
-        "cozy" in vibes or "casual" in vibes or structure == "soft"
-    ):
-        score += 0.22
-    elif comfort_first and (
-        structure == "structured" and not vibes.intersection({"cozy", "casual", "comfort"})
-    ):
-        score -= 0.12  # penalty: user wants comfort but product is stiff
-
     # ── Boldness ──
     boldness = float(values.get("boldness", 0.5))
     bold_vibes = vibes.intersection({"bold", "night out", "dramatic", "sharp"})
@@ -118,9 +107,5 @@ def score_values(product: Dict, values: Dict) -> float:
             score += 0.22
         elif bold_vibes and not quiet_vibes:
             score -= 0.10  # penalty: user wants subtle but product is loud
-
-    # ── Sustainability ──
-    if values.get("sustainable"):
-        score += 0.06
 
     return max(0.0, min(1.0, score))

@@ -74,8 +74,6 @@ def build_user_profile(body: Dict, instagram: Dict, manual: Dict) -> Dict:
     }
 
     values = {
-        "comfort_first": manual.get("comfort_first", True),
-        "sustainable": manual.get("sustainable", False),
         "boldness": manual.get("boldness", 0.5),
     }
 

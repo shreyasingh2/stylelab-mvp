@@ -55,24 +55,23 @@ def _refresh_live_catalog(
     vibes: list[str] | None = None,
     gender: str = "Women",
 ) -> tuple[bool, str]:
+    """Blocking catalog refresh (used by Force Refresh button)."""
     if not os.getenv("SERPAPI_KEY"):
         return False, "SERPAPI_KEY is not set."
     if not os.getenv("ANTHROPIC_API_KEY"):
         return False, "ANTHROPIC_API_KEY is not set."
-
     cmd = [
         sys.executable,
-        "scripts/build_live_catalog.py",
+        str(project_root / "scripts" / "build_live_catalog.py"),
         "--max-per-brand",
         str(max_per_brand),
         "--out",
-        "data/products_live.json",
+        str(project_root / "data" / "products_live.json"),
         "--gender",
         gender.lower(),
     ]
     if vibes:
         cmd += ["--vibes"] + vibes
-
     proc = subprocess.run(cmd, cwd=str(project_root), capture_output=True, text=True, check=False)
     output = (proc.stdout or "") + ("\n" + proc.stderr if proc.stderr else "")
     if proc.returncode != 0:
@@ -94,35 +93,37 @@ hero_block()
 section_header("1) Share Your Photo", "Upload a full-body photo so we can analyze your proportions.")
 uploaded = st.file_uploader("Drop your photo here", type=["jpg", "jpeg", "png"])
 
+# Auto-analyze when a new photo is uploaded
+if uploaded:
+    # Track which file we've already analyzed to avoid re-running on every rerun
+    upload_id = f"{uploaded.name}_{uploaded.size}"
+    if st.session_state.get("_last_upload_id") != upload_id:
+        image = Image.open(uploaded)
+        st.session_state.body_profile = analyze_body_from_image(
+            uploaded.getvalue(), image.width, image.height
+        )
+        st.session_state._photo_status = "analyzed"
+        st.session_state["_last_upload_id"] = upload_id
+
 c_photo1, c_photo2 = st.columns(2)
 with c_photo1:
     if uploaded:
         image = Image.open(uploaded)
         st.image(image, width=280)
+    if st.button("Use default profile instead", use_container_width=True):
+        st.session_state.body_profile = default_body_profile()
+        st.session_state._photo_status = "fallback"
+        st.session_state["_last_upload_id"] = None
+        st.rerun()
+
 with c_photo2:
-    if st.button("Analyze Photo", use_container_width=True):
-        if uploaded:
-            image = Image.open(uploaded)
-            st.session_state.body_profile = analyze_body_from_image(
-                uploaded.getvalue(), image.width, image.height
-            )
-            st.session_state._photo_status = "analyzed"
-        else:
-            st.session_state._photo_status = ""
-            st.warning("Upload a photo first.")
-
-if st.button("Use fallback profile", use_container_width=True):
-    st.session_state.body_profile = default_body_profile()
-    st.session_state._photo_status = "fallback"
-
-if st.session_state._photo_status in {"analyzed", "fallback"} and st.session_state.get("body_profile"):
-    body_profile = st.session_state["body_profile"]
-    features = body_profile.get("features", {})
-    with c_photo2:
+    if st.session_state._photo_status in {"analyzed", "fallback"} and st.session_state.get("body_profile"):
+        body_profile = st.session_state["body_profile"]
+        features = body_profile.get("features", {})
         if st.session_state._photo_status == "analyzed":
             st.success("Photo analyzed.")
         else:
-            st.success("Fallback profile applied.")
+            st.success("Default profile applied.")
 
         bullets = [
             f"- Proportion signal: **{body_profile.get('proportion_signal', 'n/a').title()}**",
@@ -140,6 +141,14 @@ if st.session_state._photo_status in {"analyzed", "fallback"} and st.session_sta
                 ]
             )
         st.markdown("\n".join(bullets))
+
+        if uploaded and st.button("Re-analyze photo"):
+            image = Image.open(uploaded)
+            st.session_state.body_profile = analyze_body_from_image(
+                uploaded.getvalue(), image.width, image.height
+            )
+            st.session_state._photo_status = "analyzed"
+            st.rerun()
 
 section_header("2) Your Style Preferences", "Pick your vibe, occasion, weather, and core colors.")
 
@@ -207,6 +216,14 @@ categories = st.multiselect(
     placeholder="e.g. dress, top, pants...",
 )
 
+brand_options = ["Reformation", "Aritzia", "Motel Rocks", "Princess Polly"]
+preferred_brands = st.multiselect(
+    "Preferred brands (optional — leave blank for all)",
+    brand_options,
+    default=st.session_state.manual_profile.get("preferred_brands") or None,
+    placeholder="e.g. Reformation, Aritzia...",
+)
+
 colors = st.multiselect(
     "Core colors",
     ["black", "white", "cream", "navy", "olive", "camel", "grey", "burgundy", "red", "blue", "brown", "beige"],
@@ -214,104 +231,75 @@ colors = st.multiselect(
     placeholder="Choose your core colors...",
 )
 
-comfort_first = st.checkbox("Comfort-first", value=st.session_state.manual_profile.get("comfort_first", True))
-sustainable = st.checkbox("Sustainability matters", value=st.session_state.manual_profile.get("sustainable", False))
-boldness = st.slider(
-    "How experimental should recommendations be?",
-    min_value=0.0,
-    max_value=1.0,
-    value=float(st.session_state.manual_profile.get("boldness", 0.5)),
-    step=0.05,
-)
+boldness = 0.5  # Fixed default — no longer exposed in UI
 
 # Use V3 (FFIT) scoring algorithm by default
 algorithm_choice = "v3"
 
-if st.button("Save Preferences", type="primary", use_container_width=True):
-    weather_to_season = {
-        "cold": "winter",
-        "snowy": "winter",
-        "cool": "fall",
-        "mild": "spring",
-        "warm": "summer",
-        "hot": "summer",
-        "rainy": "spring",
-    }
-
-    primary_occasion = occasion_multi[0] if occasion_multi else "weekend"
-
-    st.session_state.manual_profile = {
-        "gender": gender,
-        "vibes": vibes or ["minimal"],
-        "silhouettes": st.session_state.manual_profile.get("silhouettes", ["relaxed"]),
-        "colors": colors,
-        "categories": categories,
-        "location": location,
-        "season": weather_to_season.get(weather, "all"),
-        "weather": weather,
-        "occasion": primary_occasion,
-        "occasions": occasion_multi,
-        "comfort_first": comfort_first,
-        "sustainable": sustainable,
-        "boldness": boldness,
-    }
-    st.success("Preferences saved.")
+# Weather → season mapping (used when saving preferences)
+_WEATHER_TO_SEASON = {
+    "cold": "winter", "snowy": "winter", "cool": "fall",
+    "mild": "spring", "warm": "summer", "hot": "summer", "rainy": "spring",
+}
 
 with st.expander("Refresh Catalog", expanded=False):
-    user_vibes = st.session_state.manual_profile.get("vibes", [])
-    user_gender = st.session_state.manual_profile.get("gender", "Women")
-    if user_vibes:
-        st.caption(f"Will search for **{user_gender.lower()}** products matching your vibes: **{', '.join(user_vibes)}**. Save preferences first to update.")
-    else:
-        st.caption("Save your preferences first so we can tailor the catalog to your vibes.")
-    max_per_brand = st.slider("Max products per brand", min_value=3, max_value=20, value=6, step=1)
-    if st.button("Refresh Catalog", type="primary", use_container_width=True):
-        with st.spinner("Building your personalized catalog — this may take a minute..."):
-            ok, msg = _refresh_live_catalog(base_dir, max_per_brand, vibes=user_vibes or None, gender=user_gender)
+    st.caption(
+        "Fetch fresh products from Google Shopping and tag them with AI. "
+        "Requires SERPAPI_KEY and ANTHROPIC_API_KEY in your .env file."
+    )
+    if st.button("Refresh Catalog", use_container_width=True):
+        user_vibes = vibes or ["minimal", "polished", "feminine", "casual", "classic"]
+        with st.spinner("Refreshing catalog — this may take a minute..."):
+            ok, msg = _refresh_live_catalog(base_dir, 3, vibes=user_vibes, gender=gender)
         if ok:
-            st.success("Catalog refreshed with products matching your style.")
+            st.success("Catalog refreshed.")
             with st.expander("Build log", expanded=False):
                 st.code(msg[:5000])
         else:
             st.error("Refresh failed.")
             st.code(msg[:5000])
 
-section_header("3) Recommendations", "Optionally add Instagram context, then generate your top outfits.")
-ig_user = st.text_input("Instagram handle (optional)", placeholder="@yourhandle")
-ig_text = st.text_area(
-    "Paste recent captions (optional)",
-    placeholder="Neutral outfit for work day\nWide-leg trousers + blazer today",
-    height=100,
-)
+section_header("3) Recommendations", "Generate your top outfit picks.")
 
-cig1, cig2 = st.columns(2)
-with cig1:
-    if st.button("Analyze Instagram Text", use_container_width=True):
-        lines = [line.strip() for line in ig_text.splitlines() if line.strip()]
-        if lines:
-            profile = analyze_captions(lines)
-            if ig_user:
-                profile["username"] = ig_user
-            st.session_state.instagram_profile = profile
-            st.success("Instagram style profile added.")
-        else:
-            st.warning("Add at least one caption line, or skip.")
-with cig2:
-    if st.button("Skip Instagram", use_container_width=True):
-        st.session_state.instagram_profile = {}
-        st.info("Instagram skipped.")
+ig_handle = st.text_input("Instagram handle (optional)", placeholder="@yourhandle")
 
 if st.button("Get Recommendations", type="primary", use_container_width=True):
+    # If user provided an Instagram handle, store it
+    if ig_handle:
+        st.session_state.instagram_profile = {"username": ig_handle}
+    # Auto-save preferences from current widget values
+    primary_occ = occasion_multi[0] if occasion_multi else "weekend"
+    st.session_state.manual_profile = {
+        "gender": gender,
+        "vibes": vibes or ["minimal"],
+        "silhouettes": st.session_state.manual_profile.get("silhouettes", ["relaxed"]),
+        "colors": colors,
+        "categories": categories,
+        "preferred_brands": preferred_brands,
+        "location": location,
+        "season": _WEATHER_TO_SEASON.get(weather, "all"),
+        "weather": weather,
+        "occasion": primary_occ,
+        "occasions": occasion_multi,
+        "boldness": boldness,
+    }
+
+    manual = st.session_state.manual_profile
     products, products_path = load_catalog(base_dir)
     body = st.session_state.get("body_profile") or default_body_profile()
     instagram = st.session_state.get("instagram_profile") or {}
-    manual = st.session_state.get("manual_profile") or {}
 
     # Filter by garment category if user selected any
     selected_cats = manual.get("categories", [])
     if selected_cats:
         selected_cats_lower = {c.lower() for c in selected_cats}
         products = [p for p in products if p.get("category", "").lower() in selected_cats_lower]
+
+    # Filter by preferred brands if user selected any
+    sel_brands = manual.get("preferred_brands", [])
+    if sel_brands:
+        sel_brands_lower = {b.lower() for b in sel_brands}
+        products = [p for p in products if p.get("brand", "").lower() in sel_brands_lower]
 
     user_profile = build_user_profile(body=body, instagram=instagram, manual=manual)
     results = rank_products(products, user_profile, top_k=5, algorithm=algorithm_choice)
@@ -321,8 +309,7 @@ if st.button("Get Recommendations", type="primary", use_container_width=True):
     st.session_state._algorithm_choice = algorithm_choice
 
 if st.session_state.get("_results"):
-    st.subheader("Top 5 Outfits")
-    st.caption(f"Catalog: {st.session_state.get('_catalog_name', 'products.json')} | Algorithm: {st.session_state.get('_algorithm_choice', 'v2').upper()}")
+    st.subheader("Your Top Picks")
 
     for idx, item in enumerate(st.session_state._results, start=1):
         p = item["product"]
@@ -335,13 +322,16 @@ if st.session_state.get("_results"):
                 else:
                     st.info("No image available")
             with right:
-                st.markdown(f"### {idx}. {p.get('name', 'Item')} ({p.get('brand', 'Brand')})")
+                st.markdown(f"### {idx}. {p.get('name', 'Item')}")
+                st.caption(p.get("brand", ""))
                 st.write(item["explanation"])
                 product_url = p.get("url", "")
                 if product_url and "google.com/search" not in product_url:
                     st.markdown(f"[View item]({product_url})")
                 if p.get("price"):
-                    st.caption(f"Price: {p['price']}")
-                st.caption(
-                    f"Score {s['total']} | Body {s['body']} | Style {s['style']} | Context {s['context']} | Values {s['values']} | Novelty {s['novelty']}"
-                )
+                    st.caption(f"💰 {p['price']}")
+                with st.expander("Score breakdown", expanded=False):
+                    st.caption(
+                        f"Total {s['total']} · Body {s['body']} · Style {s['style']} "
+                        f"· Context {s['context']} · Values {s['values']} · Novelty {s['novelty']}"
+                    )

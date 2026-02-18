@@ -1,59 +1,97 @@
 [
   {
-    "name": "Aritzia Women's Babaton Archive Poplin Shirt",
-    "brand": "Aritzia",
-    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia button-down shirt&prds=catalogid:3031165159281177216,headlineOfferDocid:16725382060207695808,imageDocid:12360284442350141496,gpcid:15267923012883249611,mid:576462875160380242,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR7k7oYq9zDWU7TRgKnz9Y_F5NK_cZeRS-5Uy-8CKRJlku1qF24eXm411_v43F5kSqvM7Z4PiUbM2YiaMZGFDWweER1d6WeNGiMJ43FNmo9U7J6mRiTFBD4sw",
+    "name": "Reformation Jillian Silk Dress",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women wrap dress&prds=catalogid:11923576725654147246,headlineOfferDocid:16245490642767179170,imageDocid:14463891932926101176,rds:PC_12479981349161869712|PROD_PC_12479981349161869712,gpcid:12479981349161869712,mid:576462864942440624,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSfTKGos5s5cdPiUWjF01IpwF_0ZbkowRt-oaTqHkHRt9XqwuYdxJnjWEaLLWTp3WeVNQKWvimFk93Yagyrum3PzKXlRKxCAxwk-xNcwIBgW0hs6tmj6XjkHA",
+    "category": "dress",
+    "silhouette": [
+      "maxi",
+      "column",
+      "fitted"
+    ],
+    "waist": "defined",
+    "structure": "soft",
+    "vibes": [
+      "evening",
+      "bold",
+      "modern"
+    ],
+    "occasion": [
+      "event",
+      "night out"
+    ],
+    "colors": [
+      "black",
+      "cream"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.92,
+    "price": "$348.00",
+    "extracted_price": 348.0,
+    "rating": 5.0,
+    "reviews": 2,
+    "id": "live_0001"
+  },
+  {
+    "name": "Reformation Eli Oversized Silk Shirt",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women button-down shirt&prds=catalogid:14832828891736749112,headlineOfferDocid:14665373863695007905,imageDocid:15740104421066948462,gpcid:10760288112079272452,mid:576462491832810901,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSd4XdV6Yc34JuM4szQhtyTxSJp3jhSdnvmrvMKm4BkJUoTlN8uTvZJnHqtC5ywv2wTyrMwsQXu",
     "category": "top",
     "silhouette": [
       "relaxed",
       "boxy"
     ],
     "waist": "n/a",
-    "structure": "structured",
-    "vibes": [
-      "minimal",
-      "casual"
-    ],
-    "occasion": [
-      "work",
-      "weekend"
-    ],
-    "colors": [
-      "blue"
-    ],
-    "season": [
-      "all"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.89,
-    "price": "$98.00",
-    "extracted_price": 98.0,
-    "id": "live_0001"
-  },
-  {
-    "name": "Wilfred Women's Relaxed Poplin Shirt",
-    "brand": "Aritzia",
-    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia button-down shirt&prds=catalogid:3410310623738968602,headlineOfferDocid:17249215907550209577,imageDocid:5809735938973803305,gpcid:4834119153979641190,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQL32W-oMczRdT-T3LTBkP7vGiJvyu3Vwr-0KSO51Hlz7mIKf2Z-Y4RQJ1rI68WnIxxO7UxTnABD63NXi2AbKpUVCxsMQQeuRnmtLi0UxDBboLfjbINAyS3Fg",
-    "category": "top",
-    "silhouette": [
-      "relaxed",
-      "boxy",
-      "longline"
-    ],
-    "waist": "n/a",
-    "structure": "structured",
+    "structure": "soft",
     "vibes": [
       "minimal",
       "casual"
     ],
     "occasion": [
       "weekend",
-      "vacation"
+      "city"
     ],
     "colors": [
-      "white"
+      "black"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$188.00",
+    "extracted_price": 188.0,
+    "id": "live_0002"
+  },
+  {
+    "name": "Reformation Mason Pants",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women tailored trouser&prds=catalogid:2531222719608569042,headlineOfferDocid:5841827355169893229,imageDocid:13682189018529358886,gpcid:561284252217353256,mid:576462523324944941,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTPJgw_fod_rPw0aY9sg2dZiiByjNea92TscAERDBu196OogA4spHM2JwxhTEnBPGlTROWP9zeuzwO8idBbL5eqQCaHIo2KhmFVQylErAjaWJWrkPXcxJtQNA",
+    "category": "bottom",
+    "silhouette": [
+      "wide-leg",
+      "relaxed",
+      "longline"
+    ],
+    "waist": "high-rise",
+    "structure": "soft",
+    "vibes": [
+      "minimal",
+      "casual"
+    ],
+    "occasion": [
+      "weekend",
+      "travel"
+    ],
+    "colors": [
+      "cream"
     ],
     "season": [
       "spring",
@@ -61,15 +99,155 @@
     ],
     "tag_source": "vision",
     "confidence": 0.88,
-    "price": "$25.99",
-    "extracted_price": 25.99,
-    "id": "live_0002"
+    "price": "$188.00",
+    "extracted_price": 188.0,
+    "id": "live_0003"
   },
   {
-    "name": "Aritzia Wilfred Women's Baker Satin Shirt",
-    "brand": "Aritzia",
-    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia button-down shirt&prds=catalogid:9335330114396003128,headlineOfferDocid:4979479953269977464,imageDocid:13804663364406871737,gpcid:15895095016802164654,mid:576462842708064191,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRKj9BeLIlAjHxUpyhH7BuAUQImjf2bVUBhJYTo0g3sJqmIuW5R2sOY8Fj8z8hOj0_w0RYzaqK3gz4Td-XZ0oPpUu0ocSQ0saDyWzrOhMG39DHEOaJwI8Vb1hSB",
+    "name": "Reformation Cove Oversized Cashmere Sweater",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women chunky knit sweater&prds=catalogid:12833606681975916053,headlineOfferDocid:7400392354103839040,imageDocid:10869669846882193603,rds:PC_1254770243266473255|PROD_PC_1254770243266473255,gpcid:1254770243266473255,mid:576462803606304444,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTiLHfznblWE_ksMglarbBeh2G6cOHkFn1umnDyzCF3lxd_MrZxW2KNCTigsFfx9D2UoDJTHscv",
+    "category": "knitwear",
+    "silhouette": [
+      "boxy",
+      "relaxed",
+      "cropped"
+    ],
+    "waist": "n/a",
+    "structure": "soft",
+    "vibes": [
+      "cozy",
+      "minimal",
+      "elevated basics"
+    ],
+    "occasion": [
+      "weekend",
+      "travel"
+    ],
+    "colors": [
+      "navy"
+    ],
+    "season": [
+      "fall",
+      "winter"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$298.00",
+    "extracted_price": 298.0,
+    "rating": 4.0,
+    "reviews": 1,
+    "id": "live_0004"
+  },
+  {
+    "name": "Reformation Dasha Blazer",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women tailored blazer&prds=catalogid:5964685590308858,headlineOfferDocid:2472117125195209601,imageDocid:7375869946003219915,gpcid:4719565049457826188,mid:576462869438822587,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSNgSEgqPtmPmkJqiMQendcLXmmUN_67TN7YAbDXBe1jDGbqkdA1I_bzJxz4Ecrf6h_OV_9R29sNNkhl1nsedkcLvvDUmuRBRimrqHWUv38wC87C_bmklc7",
+    "category": "outerwear",
+    "silhouette": [
+      "tailored",
+      "fitted",
+      "defined waist"
+    ],
+    "waist": "defined",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "modern"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
+    ],
+    "colors": [
+      "black"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.92,
+    "price": "$298.00",
+    "extracted_price": 298.0,
+    "id": "live_0005"
+  },
+  {
+    "name": "Reformation Taryn Two Piece",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women tailored trouser&prds=catalogid:16711833419393053941,headlineOfferDocid:5643245701370308191,imageDocid:7035924616272042270,gpcid:8722964593529113875,mid:576462853994171834,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRuHf3020s2UKDcD_HXQzXRlXdAbOhV-GX05bH5SAm12oFb8Zd8VNVU3_Cn_f_-eIY-LIuv5vX-cVnVoqTavZbmN_Gnwi6g-DCacUHHaFXO6Nw95YejjKvk",
+    "category": "jumpsuit",
+    "silhouette": [
+      "wide-leg",
+      "tailored",
+      "defined waist"
+    ],
+    "waist": "high-rise",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "modern"
+    ],
+    "occasion": [
+      "work",
+      "event"
+    ],
+    "colors": [
+      "cream"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$298.00",
+    "extracted_price": 298.0,
+    "id": "live_0006"
+  },
+  {
+    "name": "Reformation Jessalyn Silk Dress",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women wrap dress&prds=catalogid:13376149758733029272,headlineOfferDocid:4971455388258069519,imageDocid:4658574463872993929,rds:PC_8625864884094855837|PROD_PC_8625864884094855837,gpcid:8625864884094855837,mid:576462900294806046,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRQecOzBFWSLUzqTyOqhI-nijVzZbPW30760ic1lXIhkBoxLx7OSJ9KPOQI-bKXEp6LUrEBK382UMj3tKUyVQXUafF1c8a1Aw0qdhzR3TwdZezrBMjRRhFR",
+    "category": "dress",
+    "silhouette": [
+      "mini",
+      "relaxed"
+    ],
+    "waist": "n/a",
+    "structure": "soft",
+    "vibes": [
+      "feminine",
+      "romantic",
+      "elevated basics"
+    ],
+    "occasion": [
+      "date",
+      "party"
+    ],
+    "colors": [
+      "cream"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$248.00",
+    "extracted_price": 248.0,
+    "rating": 4.0,
+    "reviews": 3,
+    "id": "live_0007"
+  },
+  {
+    "name": "Reformation Alfie Relaxed Shirt",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women button-down shirt&prds=catalogid:12994876008112892534,headlineOfferDocid:1039801479748522131,imageDocid:3324478715474467967,gpcid:16283650113146926361,mid:576462820657133552,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTIdiCqbjlDwuNO5EC9uO3V3MWNhI9VwN0veToUJBtYbvccCNvNrlf5orfDDlTp7sKEJL-ANPg",
     "category": "top",
     "silhouette": [
       "relaxed",
@@ -79,38 +257,7 @@
     "structure": "soft",
     "vibes": [
       "minimal",
-      "polished"
-    ],
-    "occasion": [
-      "work",
-      "weekend"
-    ],
-    "colors": [
-      "navy"
-    ],
-    "season": [
-      "all"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.88,
-    "price": "$128.00",
-    "extracted_price": 128.0,
-    "id": "live_0003"
-  },
-  {
-    "name": "Aritzia Women's Babaton Letterpress Classic Poplin Shirt",
-    "brand": "Aritzia",
-    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia button-down shirt&prds=catalogid:10898615250409953974,headlineOfferDocid:2958627782541114651,imageDocid:15068862996179671634,gpcid:16562189918721621593,mid:576462537860867506,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQGLgpDk5haC_c73bSqTuI4UGHd6zZn5_dbSy8GuzxEASau-7JYMVopPFi1OP47QpcL12UPZmfHReWEJYoFg872kdckm93Z-1w28izD7UM-lVuggpomwnVct9M",
-    "category": "top",
-    "silhouette": [
-      "relaxed",
-      "boxy"
-    ],
-    "waist": "n/a",
-    "structure": "structured",
-    "vibes": [
-      "minimal",
+      "polished",
       "classic"
     ],
     "occasion": [
@@ -118,101 +265,38 @@
       "weekend"
     ],
     "colors": [
-      "navy"
-    ],
-    "season": [
-      "all"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.89,
-    "price": "$48.99",
-    "extracted_price": 48.99,
-    "id": "live_0004"
-  },
-  {
-    "name": "Aritzia Women's Babaton Blueprint Poplin Shirt",
-    "brand": "Aritzia",
-    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia button-down shirt&prds=catalogid:18313792215698925546,headlineOfferDocid:7158806434122694382,imageDocid:10949482849130905622,gpcid:6839630426842731396,mid:576462531728711434,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRXGsSUE9kHoUi-nXY-0SK9ejXHxzzIYKk9hwHoZvVFhs-wjjNQGs5o181pclNuTcMk_3BFBJUJx3QAQ84_oUSPzcLHHwWr7voPPnUZu6Kl7qY9WP91yT9zww",
-    "category": "top",
-    "silhouette": [
-      "relaxed",
-      "boxy"
-    ],
-    "waist": "n/a",
-    "structure": "structured",
-    "vibes": [
-      "minimal",
-      "casual"
-    ],
-    "occasion": [
-      "weekend",
-      "work"
-    ],
-    "colors": [
       "white"
     ],
     "season": [
-      "spring",
-      "summer"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.88,
-    "price": "$88.00",
-    "extracted_price": 88.0,
-    "id": "live_0005"
-  },
-  {
-    "name": "Aritzia Women's Freeform Shirt",
-    "brand": "Aritzia",
-    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia button-down shirt&prds=catalogid:11619911695437499335,headlineOfferDocid:3327923361241488747,imageDocid:15856548157546253000,gpcid:14714106706295762826,mid:576462813532938943,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRcr9gzxUkUMkyxxQvFPZZhZEfT1ZlWpt7vOyHPiVmBF0qwwLaNu7zUnpxPuSBTiC1Nz8yrZbey-5Qj1PWao69kQwP1I47AUII718T9vNwH_ujgJB6HCcpRETQ",
-    "category": "top",
-    "silhouette": [
-      "relaxed",
-      "boxy"
-    ],
-    "waist": "n/a",
-    "structure": "soft",
-    "vibes": [
-      "casual",
-      "minimal"
-    ],
-    "occasion": [
-      "weekend",
-      "travel"
-    ],
-    "colors": [
-      "olive"
-    ],
-    "season": [
       "all"
     ],
     "tag_source": "vision",
-    "confidence": 0.88,
-    "price": "$118.00",
-    "extracted_price": 118.0,
-    "id": "live_0006"
+    "confidence": 0.92,
+    "price": "$128.00",
+    "extracted_price": 128.0,
+    "id": "live_0008"
   },
   {
-    "name": "Princess Polly Anni Pinstripe Shirt",
-    "brand": "Princess Polly",
-    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly button-down shirt&prds=catalogid:2649924092362747226,headlineOfferDocid:17602781138313111718,imageDocid:8612783990039331655,rds:PC_3461399990627154306|PROD_PC_3461399990627154306,gpcid:3461399990627154306,mid:576462901038843799,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQleR8zB0bAiu6uRVxhYZ7dTAmFQ-MWLAS1wseOi3EaEzBRPhuMKZANHqMzckBB2BIwfrQlnbo",
-    "category": "top",
+    "name": "Reformation Fletcher Pants",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women tailored trouser&prds=catalogid:46140492811605949,headlineOfferDocid:14442860234006658365,imageDocid:10995063042078631934,gpcid:11519936626995709508,mid:576462499561603619,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSJVsDPQ4sveI79mWRR-8eAxX9TdExd3lkfHYb1uM5JtlMwN9WDjkXh2hyNinlRxUOXX75jPyCJu2OcYBhHeAUKWgjD_OhaY4T2tFS7NmI4qizdI4UjTk7hsQ",
+    "category": "bottom",
     "silhouette": [
-      "fitted",
-      "cropped"
+      "straight",
+      "tailored",
+      "longline"
     ],
-    "waist": "n/a",
+    "waist": "high-rise",
     "structure": "structured",
     "vibes": [
+      "minimal",
       "polished",
       "modern"
     ],
     "occasion": [
-      "night out",
-      "date"
+      "work",
+      "dinner"
     ],
     "colors": [
       "black"
@@ -221,210 +305,33 @@
       "all"
     ],
     "tag_source": "vision",
-    "confidence": 0.88,
-    "price": "$47.20",
-    "extracted_price": 47.2,
-    "rating": 4.5,
-    "reviews": 849,
-    "id": "live_0007"
+    "confidence": 0.89,
+    "price": "$158.00",
+    "extracted_price": 158.0,
+    "id": "live_0009"
   },
   {
-    "name": "Princess Polly Ravil Shirt",
-    "brand": "Princess Polly",
-    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly button-down shirt&prds=catalogid:6634014778573027565,headlineOfferDocid:3949909238298990340,imageDocid:16179424884742524582,rds:PC_5938255174230921175|PROD_PC_5938255174230921175,gpcid:5938255174230921175,mid:576462516955072923,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTya_JB1GW06BGoY6Uk_lU3z9F83UUF_NLSU4bhtDQbLZ6hTL2p947XsLryckuMkxTl7k-3WQJikg",
-    "category": "top",
+    "name": "Reformation Morgan Knit Sweater Set",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women chunky knit sweater&prds=catalogid:15824986580489173190,headlineOfferDocid:4438356394874950598,imageDocid:8834005387980631566,gpcid:9211311885566733065,mid:576462537660954627,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTehsZXPxYtsLWOV8KoVLvLVoNxSZ-8bmOVyATRQlSZaDGaWSr2TWPL79fq6Yn8GyheJLC1vX0",
+    "category": "knitwear",
     "silhouette": [
-      "relaxed",
-      "fluid"
+      "fitted",
+      "mini"
     ],
     "waist": "n/a",
     "structure": "soft",
     "vibes": [
       "feminine",
-      "romantic"
+      "night out"
     ],
     "occasion": [
       "date",
       "night out"
     ],
     "colors": [
-      "olive"
-    ],
-    "season": [
-      "all"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.88,
-    "price": "$47.20",
-    "extracted_price": 47.2,
-    "rating": 4.2,
-    "reviews": 57,
-    "id": "live_0008"
-  },
-  {
-    "name": "Princess Polly Arianwyn Short Sleeve Shirt",
-    "brand": "Princess Polly",
-    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly button-down shirt&prds=catalogid:16229841083621347107,headlineOfferDocid:6416253229117659762,imageDocid:2840157360674110746,rds:PC_4185276551712102328|PROD_PC_4185276551712102328,gpcid:4185276551712102328,mid:576462872470281756,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQko-z_MxWF7Bw3jwSY0P_X3WxRe1j15rxprGvQ5cs6wdxrAe78SPX4OWeWyHzZj2Ra-Cf9ybK65ww",
-    "category": "top",
-    "silhouette": [
-      "fitted",
-      "cropped"
-    ],
-    "waist": "n/a",
-    "structure": "soft",
-    "vibes": [
-      "casual",
-      "minimal"
-    ],
-    "occasion": [
-      "weekend",
-      "vacation"
-    ],
-    "colors": [
-      "olive"
-    ],
-    "season": [
-      "spring",
-      "summer"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.88,
-    "price": "$39.20",
-    "extracted_price": 39.2,
-    "rating": 4.7,
-    "reviews": 113,
-    "id": "live_0009"
-  },
-  {
-    "name": "Princess Polly Arianwyn Check Short Sleeve Shirt",
-    "brand": "Princess Polly",
-    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly button-down shirt&prds=catalogid:1089088541245272643,headlineOfferDocid:12369713744034518599,imageDocid:15277808100047360932,rds:PC_11609616137523984151|PROD_PC_11609616137523984151,gpcid:11609616137523984151,mid:576462865626077383,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT6zyrQpic9RhPW29CTk2BbjetmaeeqW59J37sYlhpVli8XJFSJZ8nPIteyVDWWaF7rqeWuP-d88w",
-    "category": "top",
-    "silhouette": [
-      "fitted",
-      "cropped"
-    ],
-    "waist": "n/a",
-    "structure": "structured",
-    "vibes": [
-      "preppy",
-      "casual"
-    ],
-    "occasion": [
-      "weekend",
-      "city"
-    ],
-    "colors": [
-      "blue",
-      "white"
-    ],
-    "season": [
-      "spring",
-      "summer"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.88,
-    "price": "$39.20",
-    "extracted_price": 39.2,
-    "rating": 4.8,
-    "reviews": 17,
-    "id": "live_0010"
-  },
-  {
-    "name": "princess polly Cottesloe Blouse Top Pink Check Womens",
-    "brand": "Princess Polly",
-    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly button-down shirt&prds=catalogid:13248102052351598154,headlineOfferDocid:16450790134635391766,imageDocid:18338339664095844113,rds:PC_6420724206293939543|PROD_PC_6420724206293939543,gpcid:6420724206293939543,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcREXlLYD8ZnqMBzQOgf3gW5gV_bdgnSLMTP7ir9UCVvGrtzECQlvGUwR6TLeO8_OLGQxW1Abx4J",
-    "category": "top",
-    "silhouette": [
-      "fitted",
-      "defined waist"
-    ],
-    "waist": "defined",
-    "structure": "structured",
-    "vibes": [
-      "feminine",
-      "preppy"
-    ],
-    "occasion": [
-      "weekend",
-      "date"
-    ],
-    "colors": [
-      "cream",
-      "red"
-    ],
-    "season": [
-      "spring",
-      "summer"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.89,
-    "price": "$39.20",
-    "extracted_price": 39.2,
-    "rating": 4.6,
-    "reviews": 651,
-    "id": "live_0011"
-  },
-  {
-    "name": "Princess Polly Anni Stripe Pinstripe Shirt",
-    "brand": "Princess Polly",
-    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly button-down shirt&prds=catalogid:13323379844038594274,headlineOfferDocid:3122229219158640448,imageDocid:6864560628480200515,rds:PC_5861819161961916546|PROD_PC_5861819161961916546,gpcid:5861819161961916546,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS5DWnpuQxSFJnw1XUloRiOvlh-EiCzbdvsKHYhwlcHbUPxG0gqDDf2qndSKVjCcCIYoRYgAOmhgOw",
-    "category": "top",
-    "silhouette": [
-      "fitted",
-      "cropped"
-    ],
-    "waist": "n/a",
-    "structure": "structured",
-    "vibes": [
-      "polished",
-      "night out"
-    ],
-    "occasion": [
-      "night out",
-      "date"
-    ],
-    "colors": [
-      "black",
-      "white"
-    ],
-    "season": [
-      "all"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.88,
-    "price": "$47.20",
-    "extracted_price": 47.2,
-    "rating": 4.6,
-    "reviews": 333,
-    "id": "live_0012"
-  },
-  {
-    "name": "Zinta Long Sleeve Rib Knit Button Up Top",
-    "brand": "Motel Rocks",
-    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks button-down shirt&prds=catalogid:14980147020215335397,headlineOfferDocid:16365119208662249124,imageDocid:13853112892176369173,gpcid:18044032527294635418,mid:576462875538709849,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSkT04KAlkgOGstocUd-JBO0lkVaS_LS7dJTN0Os4b85p_yxTc9BiyXNxiCEbgAMd6Xih7TE2deqaxgWUIzEKv4HOPxjm6NraHRON74YSuMOH1rcTVevg8-",
-    "category": "top",
-    "silhouette": [
-      "fitted"
-    ],
-    "waist": "n/a",
-    "structure": "soft",
-    "vibes": [
-      "casual",
-      "feminine"
-    ],
-    "occasion": [
-      "weekend",
-      "date"
-    ],
-    "colors": [
-      "burgundy"
+      "brown"
     ],
     "season": [
       "fall",
@@ -432,301 +339,85 @@
     ],
     "tag_source": "vision",
     "confidence": 0.88,
-    "price": "$78.00",
-    "extracted_price": 78.0,
-    "id": "live_0013"
+    "price": "$248.00",
+    "extracted_price": 248.0,
+    "id": "live_0010"
   },
   {
-    "name": "Wilmot Poplin Blouse",
-    "brand": "Motel Rocks",
-    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks button-down shirt&prds=catalogid:17686824393075864950,headlineOfferDocid:2922514194264581173,imageDocid:323811702946851099,rds:PC_10998719856347060667|PROD_PC_10998719856347060667,gpcid:10998719856347060667,mid:576462523579178021,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSoe_LRV8TVp-yEij0ZfLisFBNCEI-cGtR8TbFB7BLYZEiiQiR_e70vco2opHdvr93FfVJYK6VH3ZzDGG_zm7maUAKC9DsM0i68vGk16AmxIgt1FdXp_7joeH4",
-    "category": "top",
+    "name": "Reformation Saro Blazer",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women tailored blazer&prds=catalogid:17677488209822953922,headlineOfferDocid:12985194732763639257,imageDocid:12631800420938388164,gpcid:5336686818110632714,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTpVM8Et7rFG85fLo7kvahWgfHussOytkL08zmQF5tETHGFKVMHzvvl-ETH5xgQQIbLt1z5mXmhyloaDlInrwIP_8OMb4LV9NaSpYN56fLy2Oe9-hS2csHX9A",
+    "category": "outerwear",
     "silhouette": [
+      "tailored",
       "fitted",
-      "cropped"
-    ],
-    "waist": "n/a",
-    "structure": "structured",
-    "vibes": [
-      "feminine",
-      "preppy"
-    ],
-    "occasion": [
-      "work",
-      "weekend"
-    ],
-    "colors": [
-      "white"
-    ],
-    "season": [
-      "spring",
-      "summer"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.89,
-    "price": "$48.00",
-    "extracted_price": 48.0,
-    "rating": 4.9,
-    "reviews": 61,
-    "id": "live_0014"
-  },
-  {
-    "name": "Wilmot Pintuck Blouse",
-    "brand": "Motel Rocks",
-    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks button-down shirt&prds=catalogid:13086598360461680912,headlineOfferDocid:426817021316529360,imageDocid:5683516953181747064,rds:PC_4521727137143147963|PROD_PC_4521727137143147963,gpcid:4521727137143147963,mid:576462874594674834,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT23dXhnwjfmsTB4PHdnxyJpvl8h4B5VQzG94g9M5qI3em6kuMeT7DMbRj40QYQSvfxGb-uguAGotS6m99WVmjHhg7hmVZodWGu-mLD9a2t6SzB4p_zwo7NRg",
-    "category": "top",
-    "silhouette": [
-      "fitted",
-      "tailored"
+      "longline"
     ],
     "waist": "defined",
     "structure": "structured",
     "vibes": [
+      "polished",
       "feminine",
-      "polished"
-    ],
-    "occasion": [
-      "work",
-      "weekend"
-    ],
-    "colors": [
-      "white"
-    ],
-    "season": [
-      "spring",
-      "summer"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.92,
-    "price": "$64.00",
-    "extracted_price": 64.0,
-    "rating": 4.3,
-    "reviews": 3,
-    "id": "live_0015"
-  },
-  {
-    "name": "motel rocks Uriela Cardigan in Harlequin Black and Off White",
-    "brand": "Motel Rocks",
-    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks button-down shirt&prds=catalogid:12890161985879710975,headlineOfferDocid:10210629812511260323,imageDocid:6523119807613570334,gpcid:3677918733290790882,mid:576462796692243776,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT9x6bsw8t_wZaO1A2dtgzIKB_RlxtL7eAM_OCzd10qBz3vR3EPbnUhjGrFoPVvsd5VKzWFxuVven4clcep3UDM2BhTNKj6BDS41mRLIKNARJyYaaK4aIlzUQ",
-    "category": "knitwear",
-    "silhouette": [
-      "relaxed"
-    ],
-    "waist": "n/a",
-    "structure": "soft",
-    "vibes": [
-      "casual"
-    ],
-    "occasion": [
-      "weekend"
-    ],
-    "colors": [
-      "black"
-    ],
-    "season": [
-      "all"
-    ],
-    "tag_source": "fallback",
-    "confidence": null,
-    "price": "$33.00",
-    "extracted_price": 33.0,
-    "id": "live_0016"
-  },
-  {
-    "name": "Low Rise Parallel Jeans",
-    "brand": "Motel Rocks",
-    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks straight-leg jeans&prds=catalogid:18179866224357182661,headlineOfferDocid:1836374697110332751,imageDocid:16138268505639090291,gpcid:2421829136922810238,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTehZagPu9iFvj5UXeqLPbvdc4yDlRKXCZZQaGYfbh53qW1l6nMTKVpV4euvPVGetn3ymjDPOUih68wnLWpoiIZZgLk4GwlZvbQ8FQqjb8I",
-    "category": "bottom",
-    "silhouette": [
-      "straight",
-      "relaxed"
-    ],
-    "waist": "low-rise",
-    "structure": "structured",
-    "vibes": [
-      "casual",
-      "street"
-    ],
-    "occasion": [
-      "weekend",
-      "city"
-    ],
-    "colors": [
-      "olive"
-    ],
-    "season": [
-      "all"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.88,
-    "price": "$76.00",
-    "extracted_price": 76.0,
-    "id": "live_0017"
-  },
-  {
-    "name": "Vintage Low Rise Jeans",
-    "brand": "Motel Rocks",
-    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks straight-leg jeans&prds=catalogid:16000747373476910609,headlineOfferDocid:5364397298662868200,imageDocid:8690726584273578449,rds:PC_14702127946082492966|PROD_PC_14702127946082492966,gpcid:14702127946082492966,mid:576462769668417691,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT109uNO4fL5CI4wRuRDUIYEYh7h0PRM63Srlbw2BEs4-3FOVH0V2IyPErnx4bIWPUMTX1x2t7NR9kW4yMopcmDwvL2IV5MmUSrYWPWersE3sfZq1vXkUaB",
-    "category": "bottom",
-    "silhouette": [
-      "straight",
-      "relaxed"
-    ],
-    "waist": "low-rise",
-    "structure": "structured",
-    "vibes": [
-      "casual",
-      "street"
-    ],
-    "occasion": [
-      "weekend"
-    ],
-    "colors": [
-      "blue"
-    ],
-    "season": [
-      "all"
-    ],
-    "tag_source": "vision",
-    "confidence": 0.88,
-    "price": "$76.00",
-    "extracted_price": 76.0,
-    "rating": 4.8,
-    "reviews": 10,
-    "id": "live_0018"
-  },
-  {
-    "name": "Reformation Raya Fitted Shirt",
-    "brand": "Reformation",
-    "url": "https://www.google.com/search?ibp=oshop&q=Reformation button-down shirt&prds=catalogid:4458266515832399016,headlineOfferDocid:13452180795140012977,imageDocid:3478177297907287759,gpcid:10560659411781719883,mid:576462531118905493,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR_g3d4EmsEbwN1ccxAocPUex89C3quQVpHqx-wZhoUILzg27zmPTK-ZJ_kfUGqUfhXhTQvWU3_8gsxa9kLS5o6dhsKC5LVyxgA0vnKqBKRfBhragWgdyX0jns",
-    "category": "top",
-    "silhouette": [
-      "fitted",
-      "tailored"
-    ],
-    "waist": "n/a",
-    "structure": "structured",
-    "vibes": [
-      "minimal",
-      "polished"
+      "modern"
     ],
     "occasion": [
       "work",
       "dinner"
     ],
     "colors": [
-      "white"
+      "cream"
     ],
     "season": [
-      "all"
+      "spring",
+      "summer",
+      "fall"
     ],
     "tag_source": "vision",
-    "confidence": 0.92,
-    "price": "$128.00",
-    "extracted_price": 128.0,
-    "id": "live_0019"
+    "confidence": 0.89,
+    "price": "$298.00",
+    "extracted_price": 298.0,
+    "id": "live_0011"
   },
   {
-    "name": "Reformation Becker Shirt",
+    "name": "Reformation Ecru Dress",
     "brand": "Reformation",
-    "url": "https://www.google.com/search?ibp=oshop&q=Reformation button-down shirt&prds=catalogid:15661002561882797080,headlineOfferDocid:5611248744544061268,imageDocid:10235945305277750766,gpcid:17738834432342302099,mid:576462511370211060,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS0J9aVekPKC3H1ZQD255mLJvSaZCdybU7Z_fk32OXeol-whj4fDjDQrOnMDhamrzElLW7B43RNeTlC6Z8AOaqvBp3tc3kSd-vnc-pPS2gKFSPgiCUbOAm8",
-    "category": "top",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women wrap dress&prds=catalogid:17841697534893321895,headlineOfferDocid:13701606413876895136,imageDocid:11472747022945263500,gpcid:3150432597544836179,mid:576462823170691958,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS2k05jZtbq9rHPkQ--71HpJzYZ5L4ky5OWl6EcKl3DYhAGF5Qo8j6w-Kmbk7z-GuyYSWVv35ORxFGLyfAoTpTIhjUDbDac-zJiaWqNFuaHjA8Hhjo3jMOa",
+    "category": "dress",
     "silhouette": [
-      "tailored",
-      "fitted"
+      "mini",
+      "fitted",
+      "column"
     ],
     "waist": "n/a",
     "structure": "structured",
     "vibes": [
-      "classic",
-      "polished"
+      "minimal",
+      "polished",
+      "evening"
     ],
     "occasion": [
-      "work",
-      "weekend"
+      "event",
+      "party"
     ],
     "colors": [
-      "white"
+      "cream"
     ],
     "season": [
       "all"
     ],
     "tag_source": "vision",
     "confidence": 0.92,
-    "price": "$168.00",
-    "extracted_price": 168.0,
-    "id": "live_0020"
-  },
-  {
-    "name": "Reformation Vanta Shirt",
-    "brand": "Reformation",
-    "url": "https://www.google.com/search?ibp=oshop&q=Reformation button-down shirt&prds=catalogid:5530939381580210881,headlineOfferDocid:16741779079425284485,imageDocid:11191624970474979798,gpcid:7499260272762158699,mid:576462840380673034,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQkWlJshuXPPno1y5I-NjqE-Rqfcfi0WpunrjplILsnOX4xD909DLfQ3mLYwpVAmrI4AK-f_A9NsEcIlPShtsg61io6InQhJmrrAzudAEgrJTr5ZQsQwW7R3A",
-    "category": "top",
-    "silhouette": [
-      "relaxed"
-    ],
-    "waist": "n/a",
-    "structure": "soft",
-    "vibes": [
-      "casual"
-    ],
-    "occasion": [
-      "weekend"
-    ],
-    "colors": [
-      "black"
-    ],
-    "season": [
-      "all"
-    ],
-    "tag_source": "fallback",
-    "confidence": null,
-    "price": "$168.00",
-    "extracted_price": 168.0,
-    "id": "live_0021"
-  },
-  {
-    "name": "Reformation Alfie Relaxed Shirt",
-    "brand": "Reformation",
-    "url": "https://www.google.com/search?ibp=oshop&q=Reformation button-down shirt&prds=catalogid:9824890368708346142,headlineOfferDocid:6596590461688097802,imageDocid:3324478715474467967,gpcid:16283650113146926361,mid:576462820657133552,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSdxxbCwJJVV7y9-S-NjCDqHC9gOQpMVbUlA8trVCPeVGH9K3uzBae6S0o8OjlaNsKaeFax2aA3toZVYeP9IKQqinIccAry3G-osB5CHZj_r2uKboLExVwz",
-    "category": "top",
-    "silhouette": [
-      "relaxed"
-    ],
-    "waist": "n/a",
-    "structure": "soft",
-    "vibes": [
-      "casual"
-    ],
-    "occasion": [
-      "weekend"
-    ],
-    "colors": [
-      "black"
-    ],
-    "season": [
-      "all"
-    ],
-    "tag_source": "fallback",
-    "confidence": null,
-    "price": "$128.00",
-    "extracted_price": 128.0,
-    "id": "live_0022"
+    "price": "$498.00",
+    "extracted_price": 498.0,
+    "id": "live_0012"
   },
   {
     "name": "Reformation Raya Fitted Silk Shirt",
     "brand": "Reformation",
-    "url": "https://www.google.com/search?ibp=oshop&q=Reformation button-down shirt&prds=catalogid:4254320930806310365,headlineOfferDocid:6720789703045539205,imageDocid:1932127672367159566,gpcid:8228349911578819583,mid:576462523620078757,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSrx9ZWYtQj0I2R6ZoVUQVYs2DkVecWWEVvvtuLjfHsd7L_YY9lGj44-ohDEVLu3n1984DYXj9_Y876BpRUP5f3R-Mb5x1uOxaUlzzhYy5w2RlRwix7fHvPWQ",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women button-down shirt&prds=catalogid:11831899303807896268,headlineOfferDocid:17918106551869201491,imageDocid:1932127672367159566,gpcid:8228349911578819583,mid:576462523620078757,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSxyBF16UWcC-TQX_bEs-XsPrBVggp8soW7Bsb1hRrcO2kb0qQsBKac-fhx3MhY4KzsYn3k6LVf",
     "category": "top",
     "silhouette": [
       "fitted",
@@ -752,24 +443,28 @@
     "confidence": 0.89,
     "price": "$198.00",
     "extracted_price": 198.0,
-    "id": "live_0023"
+    "id": "live_0013"
   },
   {
-    "name": "Reformation Eli Oversized Shirt",
+    "name": "Reformation Millie Pant",
     "brand": "Reformation",
-    "url": "https://www.google.com/search?ibp=oshop&q=Reformation button-down shirt&prds=catalogid:17869938377755601989,headlineOfferDocid:13532235456336712497,imageDocid:15740104421066948462,gpcid:4435019112714191271,mid:576462491832810901,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSfbuz3o008iXrVW54mA_-f16TfeiAb_NmOxg-ztmtRK3avrF7_k3tmtqPtIS9aSU_lOpveeg5uIFLx9G-_Y9Xnw-p45R7G-TiePaPswCVy7y7N1oid_xbzWw",
-    "category": "top",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women tailored trouser&prds=catalogid:16863142631747558804,headlineOfferDocid:11914318948937312987,imageDocid:14643297450682929471,gpcid:4269111375808397182,mid:576462899910428685,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRFNekkN-0kGjICfa0aDLOWWdMvK1ftPkJJZuTpzDemQhz3SCjNtz3e5p30-2OHDWk1MUmj7qCIN6QQlaTYMpwBHVf46loioYi5Efy70YsSdbI8XVwMatasAg",
+    "category": "bottom",
     "silhouette": [
-      "relaxed"
+      "wide-leg",
+      "tailored",
+      "longline"
     ],
-    "waist": "n/a",
-    "structure": "soft",
+    "waist": "high-rise",
+    "structure": "structured",
     "vibes": [
-      "casual"
+      "polished",
+      "minimal"
     ],
     "occasion": [
-      "weekend"
+      "work",
+      "dinner"
     ],
     "colors": [
       "black"
@@ -777,63 +472,132 @@
     "season": [
       "all"
     ],
-    "tag_source": "fallback",
-    "confidence": null,
-    "price": "$188.00",
-    "extracted_price": 188.0,
-    "id": "live_0024"
+    "tag_source": "vision",
+    "confidence": 0.92,
+    "price": "$198.00",
+    "extracted_price": 198.0,
+    "id": "live_0014"
   },
   {
-    "name": "Everlane Classic Oxford Shirt",
-    "brand": "Everlane",
-    "url": "https://www.google.com/search?ibp=oshop&q=Everlane button-down shirt&prds=catalogid:9073292652954996924,headlineOfferDocid:8087685734778944708,imageDocid:1635620754646453604,gpcid:1011905748432977065,mid:576462834433123316,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQuKjSA8RHwx6dYUkQ_nHzw1QedNtLdESIqUdu80Wf23UlLptsXI81H8iOzUD3a-6yYASLjl4fGhAs2AFLPwFbra6wmWTSYBe6UTZahgWl3cnDPxKi_MdIQrQ",
-    "category": "top",
+    "name": "Reformation Cove Oversized Cotton Sweater",
+    "brand": "Reformation",
+    "url": "https://www.google.com/search?ibp=oshop&q=Reformation women chunky knit sweater&prds=catalogid:18342928841957154731,headlineOfferDocid:12680740527516110649,imageDocid:9185154583540352909,gpcid:6954713507183486454,mid:576462879838527658,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTn7rzuf7djfRYWoFZ2hRsSuovLbo8677tfpoCVnyCaMfuLDSe7ytd96PYJnqVdg62w5L05lTPs",
+    "category": "knitwear",
     "silhouette": [
       "relaxed",
-      "straight"
+      "boxy"
     ],
     "waist": "n/a",
-    "structure": "structured",
+    "structure": "soft",
     "vibes": [
-      "classic",
-      "minimal"
+      "casual",
+      "cozy"
     ],
     "occasion": [
-      "work",
       "weekend"
+    ],
+    "colors": [
+      "cream"
+    ],
+    "season": [
+      "fall",
+      "spring"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$218.00",
+    "extracted_price": 218.0,
+    "id": "live_0015"
+  },
+  {
+    "name": "Aritzia Women's Regal Dress",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women minimal polished dress&prds=catalogid:14524261315003141377,headlineOfferDocid:966790311312833258,imageDocid:4120417491767058006,gpcid:1280863407950818644,mid:576462823172941021,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTNj678cxWUrHLwyukggxgpBWhSnXlp4yLj-FcNFnS1OjZFSfI8Ae-kfsmIJSghmk-5eVHxdIWojxlpca2JJ4atk3N-c6IeEPxw82GskvyT_7380xOrIQ65n0Y",
+    "category": "dress",
+    "silhouette": [
+      "mini",
+      "fitted",
+      "column"
+    ],
+    "waist": "defined",
+    "structure": "structured",
+    "vibes": [
+      "minimal",
+      "polished"
+    ],
+    "occasion": [
+      "date",
+      "dinner"
     ],
     "colors": [
       "white"
     ],
     "season": [
-      "all"
+      "spring",
+      "summer"
     ],
     "tag_source": "vision",
-    "confidence": 0.92,
-    "price": "$69.00",
-    "extracted_price": 69.0,
-    "id": "live_0025"
+    "confidence": 0.89,
+    "price": "$148.00",
+    "extracted_price": 148.0,
+    "id": "live_0016"
   },
   {
-    "name": "Everlane Essential Cotton Button-Up Shirt",
-    "brand": "Everlane",
-    "url": "https://www.google.com/search?ibp=oshop&q=Everlane button-down shirt&prds=catalogid:14639022130828472505,headlineOfferDocid:17770715192519932640,imageDocid:4442888958866579052,gpcid:1035394275874433915,mid:576462872268495413,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRNZO_XENScXjT3QQhB14pUJusGPLNRUo54UpcrIOV3gD9S_vI3EBp5TF_KLaZBwU7d0adOmMZUdf-ZumVs78q8-bhsUaIL8puLRfZmtYhP9PcUz66dYwrOHg",
-    "category": "top",
+    "name": "Aritzia Wilfred Women's Tailor Pant in Merle Chk Cl Tp/Heather Chr",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women tailored trouser&prds=catalogid:16222039711979270734,headlineOfferDocid:10068815021012906290,imageDocid:7910131209580927624,gpcid:5945839804412020054,mid:576462842322087705,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRzwxhWIwIuAdaT0KviIQcBHku39rc4xMibY9nejG-VPRt0tMYyiB4-bFS5tT0K_l8Y3t9N0ZvTvTdYJbMRN_RBt1OH5opveD-PEutJ3Y5pNzbaYW6psJbIcg",
+    "category": "bottom",
     "silhouette": [
-      "fitted",
-      "tailored"
+      "wide-leg",
+      "tailored",
+      "longline"
     ],
-    "waist": "n/a",
+    "waist": "high-rise",
     "structure": "structured",
     "vibes": [
-      "classic",
+      "minimal",
       "polished"
     ],
     "occasion": [
       "work",
-      "weekend"
+      "dinner"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "season": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$58.99",
+    "extracted_price": 58.99,
+    "id": "live_0017"
+  },
+  {
+    "name": "Aritzia Women's Generation Blazer",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women tailored blazer&prds=catalogid:9037987379763163260,headlineOfferDocid:6827208940911144283,imageDocid:744240911309767239,gpcid:7181924107910362739,mid:576462516932267974,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRcG86MVCQkgKPnnT9qtyyNsTJg9l7xLHGwdncNSg42G-SrFlNou1Wy1pTabF8yU0x8QE1hf-4RKZMdygu6iFOpAyH7kOlY3YE2rW6LD9AozAaN2gNPJ-jZiyg",
+    "category": "outerwear",
+    "silhouette": [
+      "tailored",
+      "fitted"
+    ],
+    "waist": "n/a",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "workwear"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
     ],
     "colors": [
       "navy"
@@ -843,24 +607,392 @@
     ],
     "tag_source": "vision",
     "confidence": 0.92,
-    "price": "$55.00",
-    "extracted_price": 55.0,
-    "id": "live_0026"
+    "price": "$248.00",
+    "extracted_price": 248.0,
+    "id": "live_0018"
   },
   {
-    "name": "Everlane Slim Oxford Shirt",
-    "brand": "Everlane",
-    "url": "https://www.google.com/search?ibp=oshop&q=Everlane button-down shirt&prds=catalogid:12014034788251868913,headlineOfferDocid:478657954296348253,imageDocid:16830580316612226437,gpcid:3079074644808620124,mid:576462498081863193,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSM1MTgSXDzfVWVYQJdEuW_CuHTp_bPTARxzJns1YpzqjKi4BGH3Mphgw278Y4j_gSbJ73JcGs-79q9wSnLDxOjktg4jIVkv2-dYBKPW8D8UFc0kzo8Bu2CAw",
-    "category": "top",
+    "name": "XS",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women minimal polished dress&prds=productid:12272313599779873579,headlineOfferDocid:12272313599779873579,imageDocid:203968033611755445,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCpNAFuCAUEH4uwnj88876mpR8EaIwU0vZX-5KMoS1WsifFFqdMmuaE6-Asm0b5266YzUWj3EQwe9nAT-5oN0qUJlomB0XqsujuF67UtMNa731Lrt4jxgc",
+    "category": "dress",
     "silhouette": [
+      "midi",
+      "column",
+      "fitted"
+    ],
+    "waist": "defined",
+    "structure": "structured",
+    "vibes": [
+      "minimal",
+      "night out"
+    ],
+    "occasion": [
+      "date",
+      "event"
+    ],
+    "colors": [
+      "blue"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$103.60",
+    "extracted_price": 103.6,
+    "id": "live_0019"
+  },
+  {
+    "name": "Aritzia Women's Babaton Figureknit Eyecatcher Dress",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women minimal polished dress&prds=catalogid:8843011861534724579,headlineOfferDocid:7050288780936778106,imageDocid:4397920439812969411,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRStdv7EqZZZ_OtyoUPJ2sfh2T-geKr3b1inC_53JCC27FuWzN5TVeyRJvgNG_T50p3KnR61HHPfiY4rKiBUKP4L43WY77XojmF6ZKa0CssFM0-Jyt_9E6u",
+    "category": "dress",
+    "silhouette": [
+      "midi",
       "fitted",
-      "tailored"
+      "column"
     ],
     "waist": "n/a",
     "structure": "structured",
     "vibes": [
-      "classic",
+      "minimal",
+      "night out"
+    ],
+    "occasion": [
+      "date",
+      "night out"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.92,
+    "price": "$103.60",
+    "extracted_price": 103.6,
+    "id": "live_0020"
+  },
+  {
+    "name": "Aritzia Women's Babaton Chamber Wool Pants",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women tailored trouser&prds=catalogid:11782470489369839401,headlineOfferDocid:9852884318783009022,imageDocid:3469366396049883040,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTFFkkZghWI5Q-datt2FFmW3jpedzXFGH38-gZfqE53GIe2QeUZvfv9H--wq6ndW36vYXyorzOxzGlRxV-nJ0jZ_qKk9lxyY6sVt035Hu_9hkvPKvC6D3j9uA",
+    "category": "bottom",
+    "silhouette": [
+      "straight",
+      "relaxed",
+      "cropped"
+    ],
+    "waist": "high-rise",
+    "structure": "structured",
+    "vibes": [
+      "minimal",
+      "polished"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
+    ],
+    "colors": [
+      "black"
+    ],
+    "season": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$148.00",
+    "extracted_price": 148.0,
+    "id": "live_0021"
+  },
+  {
+    "name": "Aritzia Women's Babaton Producer Blazer",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women tailored blazer&prds=catalogid:2597552467100736994,headlineOfferDocid:659106932595029484,imageDocid:8920943582400135644,gpcid:16363001180551493568,mid:576462876016779005,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSl-8UgtHxRVYS_yOD3YLUNchjDTLLamTHHSLPqwNMBzYAQZ-ikI08DDWmPw3YcmdhotUuxQvhvFDi9jT9LCFisj5MiKgHz_6yae3QNA3g3xyZCq8dNIdGFfw",
+    "category": "outerwear",
+    "silhouette": [
+      "relaxed",
+      "longline"
+    ],
+    "waist": "n/a",
+    "structure": "structured",
+    "vibes": [
+      "minimal",
+      "polished"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
+    ],
+    "colors": [
+      "black"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$248.00",
+    "extracted_price": 248.0,
+    "id": "live_0022"
+  },
+  {
+    "name": "Aritzia Wilfred Women's Smooth Matter Remedy Dress",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women minimal polished dress&prds=catalogid:7469440055148713057,headlineOfferDocid:12277249575964191237,imageDocid:13287938376077641761,gpcid:9116134343929384676,mid:576462769601373122,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRtzdnFSvBvXNIZjQouK1vrQt4jW_lANYykl6JTmOIShn42-JXF8YJjz68m6NRq_25FzTMTXVjKVLxrsjaDsFQaUFxezggRHh0ZrIH2hEoUo8j7PmK_Bm67GQ",
+    "category": "dress",
+    "silhouette": [
+      "midi",
+      "fitted",
+      "defined waist"
+    ],
+    "waist": "defined",
+    "structure": "soft",
+    "vibes": [
+      "minimal",
+      "night out"
+    ],
+    "occasion": [
+      "date",
+      "night out"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$48.99",
+    "extracted_price": 48.99,
+    "id": "live_0023"
+  },
+  {
+    "name": "Aritzia Women's Babaton Linear Pants",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women tailored trouser&prds=catalogid:15603795864091309598,headlineOfferDocid:9153931719807088091,imageDocid:8312929707122714312,gpcid:5092280061550266512,mid:576462531725748100,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQnVmFibx8a4TVk01SZjEiErrqDOoTkTkBnnjPx6KxwbUYMigeLl_0G7abeEyRazzY5mPu52RXOBBwdarclU0QPG0j-gmEtNZbrl0fiEdxIsicaRKcisDBwOZk",
+    "category": "bottom",
+    "silhouette": [
+      "wide-leg",
+      "relaxed",
+      "longline"
+    ],
+    "waist": "high-rise",
+    "structure": "soft",
+    "vibes": [
+      "minimal",
+      "casual"
+    ],
+    "occasion": [
+      "weekend",
+      "travel"
+    ],
+    "colors": [
+      "black"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$48.99",
+    "extracted_price": 48.99,
+    "id": "live_0024"
+  },
+  {
+    "name": "Aritzia Wilfred Women's Generation Blazer",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women tailored blazer&prds=catalogid:11958788451944330169,headlineOfferDocid:1565577881904992295,imageDocid:3004771050416946482,gpcid:15773056222966178855,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRHS4Y2Cg2_dTm5CnXCOPs6uh9-Ro20EpMcvdI05IN9KovXuZfg3GOdiglG5fbbLpDmhiF0QjRNG9LdTXYZ_3_M3XOUtNaIbCcOq7EhLk773pcaY14mmiYPBw",
+    "category": "outerwear",
+    "silhouette": [
+      "tailored",
+      "longline"
+    ],
+    "waist": "n/a",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "classic"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
+    ],
+    "colors": [
+      "cream"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.92,
+    "price": "$73.99",
+    "extracted_price": 73.99,
+    "id": "live_0025"
+  },
+  {
+    "name": "Aritzia Wilfred Women's Saturn Mini Dress",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women minimal polished dress&prds=catalogid:9031366184787938594,headlineOfferDocid:16035966794248847232,imageDocid:6624695949235122823,gpcid:8006649226810694670,mid:576462512321456165,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSExMDFilckOGsP3KqcaMgc469Ch8pr88Aof1Ld1T5Cb4MrQocEFGKtI0GNm7zZ3OoIvSKO_qhVrVbMvpKa28lkpfujEHDNTvfL6WHBlWQec6BBKEe1Lqqlgm8",
+    "category": "dress",
+    "silhouette": [
+      "mini",
+      "fitted",
+      "draped"
+    ],
+    "waist": "n/a",
+    "structure": "soft",
+    "vibes": [
+      "minimal",
+      "night out"
+    ],
+    "occasion": [
+      "night out",
+      "party"
+    ],
+    "colors": [
+      "cream"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$47.60",
+    "extracted_price": 47.6,
+    "id": "live_0026"
+  },
+  {
+    "name": "Aritzia Wilfred Women's Strata Pant",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women tailored trouser&prds=catalogid:203184451030044593,headlineOfferDocid:8693781306049638351,imageDocid:11447113767075588728,gpcid:9217921778457793798,mid:576462869500048817,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQMtwSV90Aj7vG5ZC5HD8Ik77RQ4u1esuwtc8OubTFcnTOF7GKAYIJHVwR5VpG_54xM-k8xD8Qsa4WP4E7s2u3zTHBCSMi_iiMj_qhkd2UZqo-kmuzvMFZYhw",
+    "category": "bottom",
+    "silhouette": [
+      "wide-leg",
+      "tailored",
+      "longline"
+    ],
+    "waist": "high-rise",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "workwear"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
+    ],
+    "colors": [
+      "navy"
+    ],
+    "season": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$73.99",
+    "extracted_price": 73.99,
+    "id": "live_0027"
+  },
+  {
+    "name": "Aritzia Babaton Pelham Wool Blazer",
+    "brand": "Aritzia",
+    "url": "https://www.google.com/search?ibp=oshop&q=Aritzia women tailored blazer&prds=catalogid:15247321683327269130,headlineOfferDocid:13156417569080025678,imageDocid:17386477851130993722,gpcid:12121328745020055689,mid:576462876036367738,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ7TMFGcw407Zwu4_tMxZuG669CxYNJKOCjY34uPsfLNpPghINDbEW8cs7bWe5jvTd_NCAkVloGhrUYIWbpNYXEzoIUfVbb2vaO3gWbPcZ3brjD0k2zObeQcg",
+    "category": "outerwear",
+    "silhouette": [
+      "tailored",
+      "fitted"
+    ],
+    "waist": "n/a",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "workwear"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "season": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.92,
+    "price": "$98.99",
+    "extracted_price": 98.99,
+    "id": "live_0028"
+  },
+  {
+    "name": "Junbi Wrap Mini Dress",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women wrap dress&prds=catalogid:9733552547784403934,headlineOfferDocid:770774283204489319,imageDocid:9566082442126757405,gpcid:1810077062768457728,mid:576462882250119775,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQdmQz0KiYrNk_TqM3drmOOYl_LP9khzyz9IcMpTUwMch0BdyxY1hkC_83Hldoix6Au_T4RB8oFkvif794iuMwVdW1WBgvXAtNmclb0RdUyjxOtrc7bM1DrFBA",
+    "category": "dress",
+    "silhouette": [
+      "mini",
+      "fitted",
+      "defined waist"
+    ],
+    "waist": "defined",
+    "structure": "soft",
+    "vibes": [
+      "night out",
+      "bold"
+    ],
+    "occasion": [
+      "night out",
+      "party"
+    ],
+    "colors": [
+      "burgundy"
+    ],
+    "season": [
+      "fall",
+      "winter"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$75.00",
+    "extracted_price": 75.0,
+    "id": "live_0029"
+  },
+  {
+    "name": "Wilmot Poplin Blouse",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women button-down shirt&prds=catalogid:17686824393075864950,headlineOfferDocid:2922514194264581173,imageDocid:323811702946851099,rds:PC_10998719856347060667|PROD_PC_10998719856347060667,gpcid:10998719856347060667,mid:576462523579178021,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSoe_LRV8TVp-yEij0ZfLisFBNCEI-cGtR8TbFB7BLYZEiiQiR_e70vco2opHdvr93FfVJYK6VH3ZzDGG_zm7maUAKC9DsM0i68vGk16AmxIgt1FdXp_7joeH4",
+    "category": "top",
+    "silhouette": [
+      "fitted",
+      "cropped"
+    ],
+    "waist": "n/a",
+    "structure": "structured",
+    "vibes": [
+      "feminine",
       "preppy"
     ],
     "occasion": [
@@ -868,93 +1000,170 @@
       "weekend"
     ],
     "colors": [
-      "blue",
       "white"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$48.00",
+    "extracted_price": 48.0,
+    "rating": 4.9,
+    "reviews": 61,
+    "id": "live_0030"
+  },
+  {
+    "name": "Falita Tailored Halter Neck Trouser",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women tailored trouser&prds=catalogid:14750950732282602526,headlineOfferDocid:4762634313142512593,imageDocid:14349093510318599165,gpcid:11111697628504815900,mid:576462810763510496,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRulV57ox8Z9G7KzdrQJWAZBj4w31rNxsI1E6Tvwrx_NvhiE90LDo8meJAeCaq_wPN5CtG7J2W6wlQGnyRZUoq74abfEZFCmXhkFATe4S_Z8TUT6eB2MLbuDw",
+    "category": "bottom",
+    "silhouette": [
+      "wide-leg",
+      "tailored",
+      "longline"
+    ],
+    "waist": "mid-rise",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "night out"
+    ],
+    "occasion": [
+      "night out",
+      "party"
+    ],
+    "colors": [
+      "black"
     ],
     "season": [
       "all"
     ],
     "tag_source": "vision",
-    "confidence": 0.92,
-    "price": "$69.00",
-    "extracted_price": 69.0,
-    "id": "live_0027"
+    "confidence": 0.89,
+    "price": "$75.00",
+    "extracted_price": 75.0,
+    "id": "live_0031"
   },
   {
-    "name": "Everlane Everyday Silky Cotton Shirt",
-    "brand": "Everlane",
-    "url": "https://www.google.com/search?ibp=oshop&q=Everlane button-down shirt&prds=catalogid:4081617707672712886,headlineOfferDocid:6163557948924017709,imageDocid:10774148418460707031,gpcid:14064710059683413182,mid:576462878791511521,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR-kgjjzlpLH_-AvZJW2oIxUODFLBM_cT61-OyBXLMVcplQEaw67s1rd1Fzv1kKSg3synkDQTtuLQJLXwa_V7uBs3C7YjhPa_P9f5WID0M--OQ7q0cFu2AJRg",
+    "name": "Zinta Long Sleeve Rib Knit Button Up Top",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women button-down shirt&prds=catalogid:14980147020215335397,headlineOfferDocid:16365119208662249124,imageDocid:13853112892176369173,gpcid:18044032527294635418,mid:576462875538709849,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSkT04KAlkgOGstocUd-JBO0lkVaS_LS7dJTN0Os4b85p_yxTc9BiyXNxiCEbgAMd6Xih7TE2deqaxgWUIzEKv4HOPxjm6NraHRON74YSuMOH1rcTVevg8-",
     "category": "top",
     "silhouette": [
-      "relaxed"
+      "fitted"
     ],
     "waist": "n/a",
     "structure": "soft",
     "vibes": [
-      "casual"
+      "casual",
+      "minimal"
     ],
     "occasion": [
-      "weekend"
+      "weekend",
+      "date"
     ],
     "colors": [
-      "black"
+      "burgundy"
     ],
     "season": [
-      "spring",
-      "summer"
+      "fall",
+      "winter"
     ],
-    "tag_source": "fallback",
-    "confidence": null,
-    "price": "$69.00",
-    "extracted_price": 69.0,
-    "id": "live_0028"
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$78.00",
+    "extracted_price": 78.0,
+    "id": "live_0032"
   },
   {
-    "name": "Everlane Ultrasoft Cotton Boyfriend Shirt",
-    "brand": "Everlane",
-    "url": "https://www.google.com/search?ibp=oshop&q=Everlane button-down shirt&prds=catalogid:7229024588717394522,headlineOfferDocid:13670985145463698732,imageDocid:15842154792908234022,gpcid:6585342658721060224,mid:576462529887745969,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTzk2WjtQNQT7CZbHVd09n8yN_ZpWJmuKvUWSjQLmhT4lj1_NQvkSLg3a0wPJSo-wkhG7Fu_n2Oq25G36Q7W2HAcrYynaqER61q7RqhD79sCxh1LwktimsE",
-    "category": "top",
+    "name": "Maiwa Oversized Textured Tailoring Blazer",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women tailored blazer&prds=catalogid:7203584944164668116,headlineOfferDocid:1738331714353505322,imageDocid:4929430394596144017,gpcid:6006641872196891995,mid:576462848004674376,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRes610IHZ1riKAbcioQWgIGX4doX4yeovk99XDo2Y5JZkE_YPWwtio6ralegAHE_LObga3vgs",
+    "category": "outerwear",
     "silhouette": [
-      "relaxed"
-    ],
-    "waist": "n/a",
-    "structure": "soft",
-    "vibes": [
-      "casual"
-    ],
-    "occasion": [
-      "weekend"
-    ],
-    "colors": [
-      "black"
-    ],
-    "season": [
-      "spring",
-      "summer"
-    ],
-    "tag_source": "fallback",
-    "confidence": null,
-    "price": "$59.00",
-    "extracted_price": 59.0,
-    "id": "live_0029"
-  },
-  {
-    "name": "Everlane Silky Cotton Shirt",
-    "brand": "Everlane",
-    "url": "https://www.google.com/search?ibp=oshop&q=Everlane button-down shirt&prds=catalogid:7525128063402557403,headlineOfferDocid:17320227758172290651,imageDocid:15064727806354697744,gpcid:7869514784765116346,mid:576462517364936863,pvt:a&hl=en&gl=us&udm=28",
-    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRATr_nU7IOIa1tjfWao-wG81eXjDoVSOC-QImOZmJoej5o9fa4-1kxk4tpwWeEK_6GrdGZg66wt6HY6RveygvhzoI51w_fzYz_QMmhZnhrsXklG_kx4BYpPw",
-    "category": "top",
-    "silhouette": [
+      "boxy",
       "relaxed",
-      "boxy"
+      "longline"
     ],
     "waist": "n/a",
-    "structure": "soft",
+    "structure": "structured",
     "vibes": [
       "minimal",
-      "elevated basics"
+      "modern"
+    ],
+    "occasion": [
+      "work",
+      "weekend"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "season": [
+      "fall",
+      "spring"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$74.00",
+    "extracted_price": 74.0,
+    "id": "live_0033"
+  },
+  {
+    "name": "Motel Lotri Lace Wrap Ruffle Mini Dress",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women wrap dress&prds=catalogid:12692391336621985670,headlineOfferDocid:10941280223289992355,imageDocid:6181877445078574210,gpcid:1439200126731035637,mid:576462834270500771,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSAwqGUCVU0TfRIvq8bK6nz_Q9mpEB9B-cZXWvuwFmQWytRU0JebtVDhqlp477_TDMEQuoGNXCAOTRUSHgDwwkF7uUIPdtI_loSICmksljELzG6Dc9-Kf85",
+    "category": "dress",
+    "silhouette": [
+      "mini",
+      "fitted",
+      "defined waist"
+    ],
+    "waist": "defined",
+    "structure": "soft",
+    "vibes": [
+      "feminine",
+      "romantic",
+      "night out"
+    ],
+    "occasion": [
+      "date",
+      "party"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$75.00",
+    "extracted_price": 75.0,
+    "id": "live_0034"
+  },
+  {
+    "name": "Wilmot Pintuck Blouse",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women button-down shirt&prds=catalogid:13086598360461680912,headlineOfferDocid:426817021316529360,imageDocid:5683516953181747064,rds:PC_4521727137143147963|PROD_PC_4521727137143147963,gpcid:4521727137143147963,mid:576462874594674834,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT23dXhnwjfmsTB4PHdnxyJpvl8h4B5VQzG94g9M5qI3em6kuMeT7DMbRj40QYQSvfxGb-uguAGotS6m99WVmjHhg7hmVZodWGu-mLD9a2t6SzB4p_zwo7NRg",
+    "category": "top",
+    "silhouette": [
+      "fitted",
+      "tailored"
+    ],
+    "waist": "defined",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "feminine",
+      "preppy"
     ],
     "occasion": [
       "work",
@@ -964,12 +1173,719 @@
       "white"
     ],
     "season": [
-      "all"
+      "spring",
+      "summer"
     ],
     "tag_source": "vision",
     "confidence": 0.92,
+    "price": "$64.00",
+    "extracted_price": 64.0,
+    "rating": 4.3,
+    "reviews": 3,
+    "id": "live_0035"
+  },
+  {
+    "name": "Tova Tie Tailored Pants",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women tailored trouser&prds=catalogid:4701210513005379364,headlineOfferDocid:4506296793259492332,imageDocid:12392084051434717853,gpcid:1056013606172022210,mid:576462846594070505,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRYohnmIU9PgUa1387nhaUbicd584DhtPSwtsEIxp8IsfLUQNOzI1hr77uSHsaQgIc97oaAbNyli6tl3YhI3EwQwzORt3oUGcAFUNcyvdWQ_HRAV2ch8HrY",
+    "category": "bottom",
+    "silhouette": [
+      "wide-leg",
+      "tailored",
+      "longline"
+    ],
+    "waist": "low-rise",
+    "structure": "structured",
+    "vibes": [
+      "minimal",
+      "polished"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
+    ],
+    "colors": [
+      "black"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$78.00",
+    "extracted_price": 78.0,
+    "id": "live_0036"
+  },
+  {
+    "name": "motel rocks Uriela Cardigan in Harlequin Black and Off White",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women button-down shirt&prds=catalogid:12890161985879710975,headlineOfferDocid:10210629812511260323,imageDocid:6523119807613570334,gpcid:3677918733290790882,mid:576462796692243776,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT9x6bsw8t_wZaO1A2dtgzIKB_RlxtL7eAM_OCzd10qBz3vR3EPbnUhjGrFoPVvsd5VKzWFxuVven4clcep3UDM2BhTNKj6BDS41mRLIKNARJyYaaK4aIlzUQ",
+    "category": "knitwear",
+    "silhouette": [
+      "boxy",
+      "relaxed"
+    ],
+    "waist": "n/a",
+    "structure": "soft",
+    "vibes": [
+      "bold",
+      "street"
+    ],
+    "occasion": [
+      "weekend",
+      "city"
+    ],
+    "colors": [
+      "black",
+      "cream"
+    ],
+    "season": [
+      "fall",
+      "winter"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$33.00",
+    "extracted_price": 33.0,
+    "id": "live_0037"
+  },
+  {
+    "name": "Yamira Floral Maxi Dress",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women wrap dress&prds=catalogid:6061408798537000144,headlineOfferDocid:17861411954804519200,imageDocid:10411699940267990912,rds:PC_13735706765440688057|PROD_PC_13735706765440688057,gpcid:13735706765440688057,mid:576462848358600825,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQumDxvsB0F7PfBtN5Rb7M_veEKYzQcxJ1LrjTUClO1bVu2NZiNVWcWbu8MnLozIFstXAv5wGYXwMjMRR5OHJi2fq1nkOQk7ao2rhnU2SsyQCe3WY0Uvx8l",
+    "category": "dress",
+    "silhouette": [
+      "maxi",
+      "fluid",
+      "column"
+    ],
+    "waist": "defined",
+    "structure": "soft",
+    "vibes": [
+      "romantic",
+      "feminine",
+      "evening"
+    ],
+    "occasion": [
+      "event",
+      "date"
+    ],
+    "colors": [
+      "burgundy",
+      "black"
+    ],
+    "season": [
+      "fall",
+      "winter"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$90.00",
+    "extracted_price": 90.0,
+    "rating": 1.0,
+    "reviews": 1,
+    "id": "live_0038"
+  },
+  {
+    "name": "Turner Shirt in Mono Stripe Navy",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women button-down shirt&prds=catalogid:9751787749878747677,headlineOfferDocid:14647022417104526039,imageDocid:4845145773553655436,gpcid:1795707074788760156,mid:576462857206514865,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSwULeZ2Labjr6BbQur7jPz-nQCu0tv1Hqj3Fqhphlfk8KpmztEwxsl73yKLiQm3ssmJ-M1qldqPgZQ1tvtNKAmHAV3F8S4ek6GM3bYvGhPcsPPZH6pkqWk",
+    "category": "top",
+    "silhouette": [
+      "relaxed",
+      "longline",
+      "boxy"
+    ],
+    "waist": "n/a",
+    "structure": "structured",
+    "vibes": [
+      "minimal",
+      "casual"
+    ],
+    "occasion": [
+      "weekend",
+      "work"
+    ],
+    "colors": [
+      "navy",
+      "white"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$42.00",
+    "extracted_price": 42.0,
+    "id": "live_0039"
+  },
+  {
+    "name": "Faria Trouser",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women tailored trouser&prds=catalogid:8707859153190066874,headlineOfferDocid:5193356243139977559,imageDocid:6931108812403987895,gpcid:6530368601926767065,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRWhKrXLLCJhaNNjxTGLjkgswA4lgt0_jkTDYokIskrFckpkOsDI7qukTSdE_-ySWrtlltqqvvflnaDjcNY5KauA10tqExYhEVgdRdJj8ArVP2ZLc0FjXPFiKw",
+    "category": "bottom",
+    "silhouette": [
+      "wide-leg",
+      "tailored",
+      "longline"
+    ],
+    "waist": "low-rise",
+    "structure": "soft",
+    "vibes": [
+      "minimal",
+      "modern"
+    ],
+    "occasion": [
+      "night out",
+      "dinner"
+    ],
+    "colors": [
+      "black"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$82.00",
+    "extracted_price": 82.0,
+    "id": "live_0040"
+  },
+  {
+    "name": "Halter Neck Rose Print Dress",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women wrap dress&prds=catalogid:18393083122696007235,headlineOfferDocid:1306878965847455434,imageDocid:13958639264044184039,rds:PC_645694182426389002|PROD_PC_645694182426389002,gpcid:645694182426389002,mid:576462788689278552,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQlhZi716Kwh-Ar4XVin79h1qMX_grkuYUjmog--i-xB55PolXWp0POBndQYY2mVkuwfXWGUGUvKjwizXj9mQSwsgSkG0E_HJGHe96HhOtaaNoSri7nwY6hkjw",
+    "category": "dress",
+    "silhouette": [
+      "mini",
+      "fitted",
+      "a-line"
+    ],
+    "waist": "defined",
+    "structure": "soft",
+    "vibes": [
+      "feminine",
+      "night out"
+    ],
+    "occasion": [
+      "party",
+      "night out"
+    ],
+    "colors": [
+      "black"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
     "price": "$59.00",
     "extracted_price": 59.0,
-    "id": "live_0030"
+    "rating": 5.0,
+    "reviews": 1,
+    "id": "live_0041"
+  },
+  {
+    "name": "Motel Women's Rivela Tie Waist wide leg tailored pants",
+    "brand": "Motel Rocks",
+    "url": "https://www.google.com/search?ibp=oshop&q=Motel Rocks women tailored trouser&prds=catalogid:518946030185092570,headlineOfferDocid:5042362550781981421,imageDocid:8924053092831695115,gpcid:2903029169238544825,mid:576462846308705909,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTQR-L4Ek1czRFM3_SbzlP5Ht0TfXKSTBd0onDpKZMhHtLT6hIIpy7pc6glg8ZmdaS9RyhmK5sVcFmXiWpSADle5NAeOi7fUITlFuVaP8uA",
+    "category": "bottom",
+    "silhouette": [
+      "wide-leg",
+      "relaxed",
+      "longline"
+    ],
+    "waist": "high-rise",
+    "structure": "soft",
+    "vibes": [
+      "minimal",
+      "modern"
+    ],
+    "occasion": [
+      "work",
+      "weekend"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$73.00",
+    "extracted_price": 73.0,
+    "id": "live_0042"
+  },
+  {
+    "name": "Celena Mini Dress",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women minimal polished dress&prds=catalogid:13387041730727975074,headlineOfferDocid:7559372076009344087,imageDocid:15819427110324527736,rds:PC_17683825840207308111|PROD_PC_17683825840207308111,gpcid:17683825840207308111,mid:576462876918203634,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSmYroZn0Jmfnb2DZb6z_Ms_En0fe8ysx037S8xLyla64np4JyeYamF6zSpjM6DKCfxkaoYn_Vwu-3dfPUrT0mavxjcOoE6IU4v4rqjufLeRbj3VH5TkuBsS3Y",
+    "category": "dress",
+    "silhouette": [
+      "mini",
+      "fitted",
+      "draped"
+    ],
+    "waist": "n/a",
+    "structure": "soft",
+    "vibes": [
+      "feminine",
+      "night out"
+    ],
+    "occasion": [
+      "night out",
+      "party"
+    ],
+    "colors": [
+      "cream"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$28.00",
+    "extracted_price": 28.0,
+    "rating": 4.2,
+    "reviews": 711,
+    "id": "live_0043"
+  },
+  {
+    "name": "Princess Polly Nylen Tailored Pinstripe Suiting Top",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women tailored blazer&prds=catalogid:2038433293818867115,headlineOfferDocid:9981717101557908619,imageDocid:3095925357221491074,rds:PC_5737065086922561175|PROD_PC_5737065086922561175,gpcid:5737065086922561175,mid:576462840022027665,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSB_Zaomi1QUJ-_ueSkJeq-zaRHVurE06eLTd4hS9f3yEPFEr3DZCA0sTa3VIIMBb2Xsip1tBuy",
+    "category": "top",
+    "silhouette": [
+      "fitted",
+      "tailored"
+    ],
+    "waist": "defined",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "modern"
+    ],
+    "occasion": [
+      "work",
+      "night out"
+    ],
+    "colors": [
+      "olive",
+      "grey"
+    ],
+    "season": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$24.50",
+    "extracted_price": 24.5,
+    "rating": 5.0,
+    "reviews": 2,
+    "id": "live_0044"
+  },
+  {
+    "name": "Princess Polly Uvelia Tailored Pinstripe Pants",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women tailored trouser&prds=catalogid:6080768512113001224,headlineOfferDocid:806852090244423802,imageDocid:17436293143987464472,gpcid:29589439443765945,mid:576462846799795043,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT2ni3M-a1qQqk5R3PeEU0q6mEU09Ak0NcfsASrT_c01_x4_TNB4HWoGzAvlmM",
+    "category": "jumpsuit",
+    "silhouette": [
+      "wide-leg",
+      "tailored",
+      "longline"
+    ],
+    "waist": "high-rise",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "modern"
+    ],
+    "occasion": [
+      "work",
+      "night out"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$32.50",
+    "extracted_price": 32.5,
+    "id": "live_0045"
+  },
+  {
+    "name": "Princess Polly Deane Check Blazer",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women tailored blazer&prds=catalogid:1049998351583828351,headlineOfferDocid:6251010362899742407,imageDocid:15250105925228046835,rds:PC_4436628272528689030|PROD_PC_4436628272528689030,gpcid:4436628272528689030,mid:576462846522893368,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTCtOoinbNwvLVBYQAkYHptYZ2WuEtksDIseesLY1cQecb0zjXJ4fYFJTbKuNm5waf_xf_lTlWk",
+    "category": "outerwear",
+    "silhouette": [
+      "longline",
+      "relaxed"
+    ],
+    "waist": "n/a",
+    "structure": "structured",
+    "vibes": [
+      "preppy",
+      "polished"
+    ],
+    "occasion": [
+      "work",
+      "weekend"
+    ],
+    "colors": [
+      "camel",
+      "brown"
+    ],
+    "season": [
+      "fall",
+      "spring"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$89.00",
+    "extracted_price": 89.0,
+    "rating": 4.8,
+    "reviews": 6,
+    "id": "live_0046"
+  },
+  {
+    "name": "Clemence Mini Dress",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women minimal polished dress&prds=catalogid:2756827567928644315,headlineOfferDocid:1768432628486811677,imageDocid:14420742354688716105,rds:PC_3409723314593785008|PROD_PC_3409723314593785008,gpcid:3409723314593785008,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR-W16LoviLxu2cjtw37XraYxw1ngzWKV-CO0c8Zd0TmlQw_j17VuIYlQrMBEge83U1aFU_FusIipFNkfdXf2Jj2Z_8FddTK03V44PQPQzFw5pn6ZWnY8-3",
+    "category": "dress",
+    "silhouette": [
+      "mini",
+      "fitted",
+      "defined waist"
+    ],
+    "waist": "defined",
+    "structure": "soft",
+    "vibes": [
+      "feminine",
+      "night out"
+    ],
+    "occasion": [
+      "night out",
+      "party"
+    ],
+    "colors": [
+      "white"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$32.00",
+    "extracted_price": 32.0,
+    "rating": 4.5,
+    "reviews": 293,
+    "id": "live_0047"
+  },
+  {
+    "name": "Princess Polly Wylma Belt Tailored Pants",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women tailored trouser&prds=catalogid:5208299747557272670,headlineOfferDocid:15706826817709045621,imageDocid:3867733338363520149,gpcid:15819271817784874020,mid:576462869679707932,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRMkGdq3pte7FgHSnjLVkEIjZCibdg3m2FnYNdiZrOPvCSVsm25wMIwVIYxBig9z8-8YcxX9INmhA",
+    "category": "bottom",
+    "silhouette": [
+      "wide-leg",
+      "tailored",
+      "longline"
+    ],
+    "waist": "high-rise",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "modern"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$34.50",
+    "extracted_price": 34.5,
+    "id": "live_0048"
+  },
+  {
+    "name": "Womens Princess Polly Crowd Pleaser Oversize Blazer",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women tailored blazer&prds=catalogid:2281682280697199300,headlineOfferDocid:3425374287885021815,imageDocid:12199226070949888363,rds:PC_14050784981100995272|PROD_PC_14050784981100995272,gpcid:14050784981100995272,mid:576462840188271627,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUe-ktIpnJyrGeoDbi8s6_IMwTxv5f-sEYkiImHvS1Mc65WAu4edUCN6Rf2N9Oq4cP4npbBbh_ww",
+    "category": "outerwear",
+    "silhouette": [
+      "boxy",
+      "relaxed",
+      "longline"
+    ],
+    "waist": "n/a",
+    "structure": "structured",
+    "vibes": [
+      "modern",
+      "polished"
+    ],
+    "occasion": [
+      "work",
+      "city"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "season": [
+      "fall",
+      "spring"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$54.50",
+    "extracted_price": 54.5,
+    "rating": 4.2,
+    "reviews": 21,
+    "id": "live_0049"
+  },
+  {
+    "name": "Ortega Mini Dress",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women minimal polished dress&prds=catalogid:13742145862937900252,headlineOfferDocid:17172232495043459765,imageDocid:15633018185692453979,rds:PC_12370688168926683301|PROD_PC_12370688168926683301,gpcid:4995223271007120857,mid:576462869439915264,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRwGnxarZ1miIlrr_VgF4PpmHNxiRjeqygauEgs3VNKe6fxo7TzMrRad39IDxpMDgGDdmT4N3E8nN5dnNZvV6HhMWCnAdfCmk4iFw6srbOTAgcCyFJ_sjbe",
+    "category": "dress",
+    "silhouette": [
+      "mini",
+      "fitted",
+      "defined waist"
+    ],
+    "waist": "defined",
+    "structure": "soft",
+    "vibes": [
+      "feminine",
+      "romantic",
+      "night out"
+    ],
+    "occasion": [
+      "date",
+      "vacation"
+    ],
+    "colors": [
+      "white"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$28.00",
+    "extracted_price": 28.0,
+    "rating": 4.5,
+    "reviews": 236,
+    "id": "live_0050"
+  },
+  {
+    "name": "Princess Polly Natilee Relaxed Tailored Pinstripe Pants",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women tailored trouser&prds=catalogid:2092131694873390339,headlineOfferDocid:8289053045343420219,imageDocid:8574260885026488921,rds:PC_4408101605077253883|PROD_PC_4408101605077253883,gpcid:4408101605077253883,mid:576462846475163263,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTnZ_U-ddTLh0gFvbTM9HvSZ11R19_6_8_Z9BIrFVOTXzHbEOb5m3oMoxA9IWh0X-QgCn2M6WZp",
+    "category": "bottom",
+    "silhouette": [
+      "wide-leg",
+      "relaxed",
+      "longline"
+    ],
+    "waist": "high-rise",
+    "structure": "soft",
+    "vibes": [
+      "polished",
+      "minimal"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "season": [
+      "all"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$40.50",
+    "extracted_price": 40.5,
+    "rating": 4.3,
+    "reviews": 3,
+    "id": "live_0051"
+  },
+  {
+    "name": "Princess Polly Oversized Plaid Blazer",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women tailored blazer&prds=catalogid:9983028657629086484,headlineOfferDocid:855577042426966129,imageDocid:3401227938516359047,rds:PC_8882277123591124448|PROD_PC_8882277123591124448,gpcid:8882277123591124448,mid:576462846036645887,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQYSZSBqPJRFWkM8b2G7MX0e8GDLp26BWAZ6AKhSbVXNt9lNyC1Xzu7lXQS-zxJJbPTx7AXEOcNMQ",
+    "category": "outerwear",
+    "silhouette": [
+      "boxy",
+      "relaxed"
+    ],
+    "waist": "n/a",
+    "structure": "structured",
+    "vibes": [
+      "preppy",
+      "classic"
+    ],
+    "occasion": [
+      "weekend",
+      "work"
+    ],
+    "colors": [
+      "brown",
+      "camel"
+    ],
+    "season": [
+      "fall",
+      "spring"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.89,
+    "price": "$44.50",
+    "extracted_price": 44.5,
+    "rating": 3.7,
+    "reviews": 3,
+    "id": "live_0052"
+  },
+  {
+    "name": "Princess Polly Soul Shining Mini Dress",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women minimal polished dress&prds=catalogid:18119023171297077488,headlineOfferDocid:16897243835156383605,imageDocid:313963607804363503,rds:PC_10275287560409690232|PROD_PC_10275287560409690232,gpcid:10275287560409690232,mid:576462826596318017,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRnKo7tJTQRMrsQGJnlarjhoXw5aLg-2oyqccZDlp6bfoAYhYCxL_qv8Cw0ap-sH6LDCMnEwakyHsBu659Z1KCr_FeYh_bWU0F_4wVFZ5r-aQb6PscC1mjWbOM",
+    "category": "dress",
+    "silhouette": [
+      "mini",
+      "a-line",
+      "defined waist"
+    ],
+    "waist": "defined",
+    "structure": "soft",
+    "vibes": [
+      "feminine",
+      "romantic"
+    ],
+    "occasion": [
+      "date",
+      "party"
+    ],
+    "colors": [
+      "white"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.92,
+    "price": "$32.00",
+    "extracted_price": 32.0,
+    "rating": 1.0,
+    "reviews": 1,
+    "id": "live_0053"
+  },
+  {
+    "name": "Princess Polly Syrena Tailored Wide Leg Pants",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women tailored trouser&prds=catalogid:9960362297429464936,headlineOfferDocid:707714495070552233,imageDocid:13511451252079943118,rds:PC_5269353154160226910|PROD_PC_5269353154160226910,gpcid:5269353154160226910,mid:576462839495645280,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSfSkVd1heqHoEMgI71H6CU-ZwpgXbvffOxpUw8T-4I-TxLn3zX-S8ccAJSSSrmaN1GGyjOtahPBA",
+    "category": "bottom",
+    "silhouette": [
+      "wide-leg",
+      "tailored",
+      "longline"
+    ],
+    "waist": "high-rise",
+    "structure": "soft",
+    "vibes": [
+      "minimal",
+      "polished"
+    ],
+    "occasion": [
+      "work",
+      "dinner"
+    ],
+    "colors": [
+      "beige"
+    ],
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$65.00",
+    "extracted_price": 65.0,
+    "rating": 5.0,
+    "reviews": 1,
+    "id": "live_0054"
+  },
+  {
+    "name": "Princess Polly Holley Tweedle Jacket",
+    "brand": "Princess Polly",
+    "url": "https://www.google.com/search?ibp=oshop&q=Princess Polly women tailored blazer&prds=catalogid:11843208972511611415,headlineOfferDocid:6379356059545091779,imageDocid:16792724337428203693,rds:PC_7566833420991350294|PROD_PC_7566833420991350294,gpcid:7566833420991350294,mid:576462835322088152,pvt:a&hl=en&gl=us&udm=28",
+    "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTNI7ZLf9yWg71dfyGb3dlpa4ZtufeGddl2jpbk5pEzYY1jULhrQGWoHmut6R4ssULOHz_nPgam",
+    "category": "outerwear",
+    "silhouette": [
+      "tailored",
+      "fitted",
+      "defined waist"
+    ],
+    "waist": "defined",
+    "structure": "structured",
+    "vibes": [
+      "polished",
+      "modern"
+    ],
+    "occasion": [
+      "work",
+      "city"
+    ],
+    "colors": [
+      "grey"
+    ],
+    "season": [
+      "fall",
+      "spring"
+    ],
+    "tag_source": "vision",
+    "confidence": 0.88,
+    "price": "$89.00",
+    "extracted_price": 89.0,
+    "rating": 3.0,
+    "reviews": 2,
+    "id": "live_0055"
   }
 ]
