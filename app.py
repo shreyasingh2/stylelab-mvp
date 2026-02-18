@@ -99,10 +99,14 @@ if uploaded:
     upload_id = f"{uploaded.name}_{uploaded.size}"
     if st.session_state.get("_last_upload_id") != upload_id:
         image = Image.open(uploaded)
-        st.session_state.body_profile = analyze_body_from_image(
-            uploaded.getvalue(), image.width, image.height
-        )
-        st.session_state._photo_status = "analyzed"
+        try:
+            st.session_state.body_profile = analyze_body_from_image(
+                uploaded.getvalue(), image.width, image.height
+            )
+            st.session_state._photo_status = "analyzed"
+        except Exception:
+            st.session_state.body_profile = default_body_profile()
+            st.session_state._photo_status = "fallback"
         st.session_state["_last_upload_id"] = upload_id
 
 c_photo1, c_photo2 = st.columns(2)
@@ -144,10 +148,14 @@ with c_photo2:
 
         if uploaded and st.button("Re-analyze photo"):
             image = Image.open(uploaded)
-            st.session_state.body_profile = analyze_body_from_image(
-                uploaded.getvalue(), image.width, image.height
-            )
-            st.session_state._photo_status = "analyzed"
+            try:
+                st.session_state.body_profile = analyze_body_from_image(
+                    uploaded.getvalue(), image.width, image.height
+                )
+                st.session_state._photo_status = "analyzed"
+            except Exception:
+                st.session_state.body_profile = default_body_profile()
+                st.session_state._photo_status = "fallback"
             st.rerun()
 
 section_header("2) Your Style Preferences", "Pick your vibe, occasion, weather, and core colors.")
